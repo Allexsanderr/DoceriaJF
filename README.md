@@ -19,8 +19,6 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 - Visão Geral
 - Principais Funcionalidades
 - Arquitetura e Estrutura de Pastas
-- Publicação no GitHub (e Pages)
-- Guia de Edição Rápida (“Como editar”)
 - Referências a trechos do código
 - Animações e Visual
 - Melhorias futuras sugeridas
@@ -64,37 +62,7 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 
 <!-- seção "Como Rodar Localmente" removida a pedido -->
 
-## Publicação no GitHub
-```bash
-git init
-git branch -M main
-git remote add origin https://github.com/<usuario>/<repo>.git
-git add .
-git commit -m "Site TK DU CORTE: agendamento, slider, galeria, modal"
-git push -u origin main
-```
-
-### GitHub Pages (opcional)
-1) No repositório, Settings → Pages → Branch: `main` → `/root` → Save
-2) Acesse a URL gerada. Se desejar uma branch dedicada:
-```bash
-git checkout --orphan gh-pages
-git rm -rf .
-cp -r c:/Users/allex/Desktop/tested2/* .
-git add .
-git commit -m "Publicar site"
-git push -u origin gh-pages
-```
-
-## Guia de Edição Rápida (“Como editar”)
-- Hero (título/CTA): `c:\Users\allex\Desktop\tested2\index.html:27–33`
-- Assinatura (texto/abas/slider): `index.html:36–74`, `66–71`
-- Estrutura (vídeo src): `index.html:82–84`
-- Equipe (imagens e nomes): `index.html:95–102`
-- Galeria (imagens corte‑1…corte‑20): `index.html:112–116`; intervalo de troca em `script.js:25`
-- Agendamento (texto e link): `index.html:125–129`
-- Fundos por seção: `c:\Users\allex\Desktop\tested2\styles.css:39–43`
-- Overlay (opacidade): `styles.css:37–38`
+<!-- seções removidas a pedido: Publicação, Pages e Guia de Edição Rápida -->
 
 ## Referências a trechos do código
 - Navegação com rolagem e estado ativo: `c:\Users\allex\Desktop\tested2\script.js:10–13`
@@ -108,6 +76,15 @@ git push -u origin gh-pages
 - Efeito de transição nas imagens da Galeria via `script.js` (classe `fade`).
 - Slider com auto‑play, controle por abas e teclas — experiência fluida.
  - Badges animados e banner ondulado no README para destacar ações.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Siga%20no%20Instagram-@tk_du_corte-c6a15b?style=for-the-badge&logo=instagram&labelColor=0f0f0f" alt="Instagram" />
+  <img src="https://img.shields.io/badge/Fale%20no%20WhatsApp-+55%2032%209913-0371-c6a15b?style=for-the-badge&logo=whatsapp&labelColor=0f0f0f" alt="WhatsApp" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=20&duration=2500&pause=900&color=D9B66D&center=true&vCenter=true&width=640&lines=%F0%9F%8E%88+Galeria+din%C3%A2mica+de+cortes;%F0%9F%92%89+Slider+com+abas+e+auto%E2%80%91play;%F0%9F%94%8D+Agendamento+externo+pr%C3%A1tico" alt="typing animation 2" />
+</p>
 
 ### Carrossel (prévia animada)
 <p align="center">
