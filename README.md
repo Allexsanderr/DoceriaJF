@@ -5,6 +5,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:c6a15b&height=110&section=header&text=Barbearia%20TK%20DU%20CORTE&fontColor=ffffff&fontSize=36&animation=fadeIn" alt="banner" />
 </p>
 <p align="center">
+  <img src="imagens/razor-blade.png" alt="Logo TK DU CORTE" width="120" />
+</p>
+<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=22&duration=2800&pause=800&color=C6A15B&center=true&vCenter=true&width=620&lines=Agende+seu+corte+agora;Estilo%2C+precis%C3%A3o+e+experi%C3%AAncia;Visual+moderno+com+slider+e+galeria+animados" alt="typing animation" />
 </p>
 <p align="center">
@@ -45,11 +48,6 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
   <p align="center">
     <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="320" />
     <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="320" />
-  </p>
-  <p align="center">
-    <img src="imagens/corte-1.jpg" alt="Corte 1" width="220" />
-    <img src="imagens/corte-2.jpg" alt="Corte 2" width="220" />
-    <img src="imagens/corte-3.jpg" alt="Corte 3" width="220" />
   </p>
 </details>
 
@@ -92,11 +90,7 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 </p>
 
 ### Prévia visual estática
-<p align="center">
-  <img src="imagens/corte-1.jpg" alt="Corte 1" width="220" />
-  <img src="imagens/corte-2.jpg" alt="Corte 2" width="220" />
-  <img src="imagens/corte-3.jpg" alt="Corte 3" width="220" />
-</p>
+<!-- imagens de cortes removidas a pedido -->
 <p align="center">
   <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="280" />
   <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="280" />
