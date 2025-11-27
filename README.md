@@ -1,4 +1,9 @@
+
 # Barbearia TK DU CORTE — Guia do Projeto
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=22&duration=2800&pause=800&color=C6A15B&center=true&vCenter=true&width=520&lines=Barbearia+TK+DU+CORTE;Agende+seu+corte+agora;Estilo%2C+precis%C3%A3o+e+experi%C3%AAncia" alt="typing animation" />
+</p>
 
 Site institucional com foco em agendamento externo, conteúdo visual e experiência simples. Este guia traz um panorama técnico e instruções práticas para edição e publicação.
 
@@ -6,10 +11,10 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 - Visão Geral
 - Principais Funcionalidades
 - Arquitetura e Estrutura de Pastas
-- Como Rodar Localmente
 - Publicação no GitHub (e Pages)
 - Guia de Edição Rápida (“Como editar”)
 - Referências a trechos do código
+- Animações e Visual
 - Melhorias futuras sugeridas
 
 ## Visão Geral
@@ -32,11 +37,7 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 - `imagens/` — assets (fundos, cortes, profissionais, vídeo mp4, decorativos).
 - `fonts/` — fontes Rocket Thunder usadas em títulos.
 
-## Como Rodar Localmente
-```bash
-python -m http.server 8000
-# abra http://localhost:8000/
-```
+<!-- seção "Como Rodar Localmente" removida a pedido -->
 
 ## Publicação no GitHub
 ```bash
@@ -75,6 +76,12 @@ git push -u origin gh-pages
 - Slider (auto‑play 5s, prev/next, abas, teclado): `script.js:34–56`
 - Modal promocional (pausa ao fechar): `script.js:28–33`
 - Decoração lateral com opacidade: `styles.css:133–136`, `137–140`
+
+## Animações e Visual
+- Cabeçalho do README com animação de digitação (SVG): tipografia e frases animadas.
+- Emojis e ícones para reforçar ações: 💈 ✂️ 🧔‍♂️ ✨
+- Efeito de transição nas imagens da Galeria via `script.js` (classe `fade`).
+- Slider com auto‑play, controle por abas e teclas — experiência fluida.
 
 ## Melhorias futuras sugeridas
 - Otimizar imagens (WebP/AVIF) e lazy‑loading.
