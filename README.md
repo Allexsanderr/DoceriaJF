@@ -15,6 +15,12 @@
   </a>
 </p>
 
+## Apresentação em Vídeo
+<p align="center">
+  <video src="videos/Gravação de Tela 2025-11-27 204346.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none"></video>
+  <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none"></video>
+</p>
+
 ## Visão Geral
 - Site institucional com foco em agendamento externo via CashBarber.
 - Conteúdo visual forte, navegação simples e seções diretas (Hero, Assinatura, Estrutura, Equipe, Galeria e Agendamento).
