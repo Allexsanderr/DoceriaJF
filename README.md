@@ -39,17 +39,7 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 - Navegação com rolagem suave e estado ativo: `c:\Users\allex\Desktop\tested2\script.js:1–13`
 - Imagens decorativas com opacidade: lâmina na assinatura `index.html:72–73`; estilos `c:\Users\allex\Desktop\tested2\styles.css:133–136`
 
-<details>
-  <summary>Prévia visual (clique para expandir)</summary>
-
-  <p align="center">
-    <img src="imagens/barber-bg-min.jpg" alt="Hero background" width="720" />
-  </p>
-  <p align="center">
-    <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="320" />
-    <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="320" />
-  </p>
-</details>
+<!-- prévia visual removida a pedido -->
 
 ## Arquitetura e Estrutura de Pastas
 - `index.html` — marcação principal com seções e comentários “Como editar”.
@@ -84,12 +74,7 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
   <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=20&duration=2500&pause=900&color=D9B66D&center=true&vCenter=true&width=640&lines=%F0%9F%8E%88+Galeria+din%C3%A2mica+de+cortes;%F0%9F%92%89+Slider+com+abas+e+auto%E2%80%91play;%F0%9F%94%8D+Agendamento+externo+pr%C3%A1tico" alt="typing animation 2" />
 </p>
 
-### Prévia visual estática
-<!-- imagens de cortes removidas a pedido -->
-<p align="center">
-  <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="280" />
-  <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="280" />
-</p>
+<!-- prévia visual estática removida a pedido -->
 
 ## Melhorias futuras sugeridas
 - Otimizar imagens (WebP/AVIF) e lazy‑loading.
@@ -100,3 +85,23 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:c6a15b,100:1a1a1a&height=110&section=footer&text=Obrigado!&fontColor=ffffff&fontSize=28&animation=fadeIn" alt="footer banner" />
 </p>
+
+## Tecnologias Utilizadas
+- Linguagens: HTML5, CSS3, JavaScript (vanilla)
+- Estilos: CSS Grid/Flex, responsividade e overlay com gradiente
+- Ícones: SVG inline (WhatsApp/Instagram)
+- Tipografia: Rocket Thunder para títulos
+- Mídia: vídeo `playsinline` e `muted` no modal
+- Sem frameworks: código leve e direto
+
+## Componentes do Site
+- Hero: título, subtítulo e CTA para agendamento
+- Assinatura: slider com prev/next, auto‑play e abas
+- Estrutura: vídeo da barbearia com controles
+- Equipe: cards com fotos e nomes
+- Galeria: atualização automática com transição suave
+- Agendamento: texto simples e link externo
+
+## Integrações
+- Agendamento: CashBarber (botão “Agendar agora”)
+- Contato: WhatsApp no topo do site
