@@ -84,11 +84,6 @@ Site institucional com foco em agendamento externo, conteúdo visual e experiên
   <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=20&duration=2500&pause=900&color=D9B66D&center=true&vCenter=true&width=640&lines=%F0%9F%8E%88+Galeria+din%C3%A2mica+de+cortes;%F0%9F%92%89+Slider+com+abas+e+auto%E2%80%91play;%F0%9F%94%8D+Agendamento+externo+pr%C3%A1tico" alt="typing animation 2" />
 </p>
 
-### Carrossel (prévia animada)
-<p align="center">
-  <video src="imagens/AQNjtt_rhSlSviu71hGQDyJTbA87P26u7im8jMEqgcbVX7WKajal_c-43vLgouZJAixYAdQ2KvXZTLQYV0_cuOFKkoxqhRJB.mp4" width="760" autoplay loop muted playsinline></video>
-</p>
-
 ### Prévia visual estática
 <!-- imagens de cortes removidas a pedido -->
 <p align="center">
