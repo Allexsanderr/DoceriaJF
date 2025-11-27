@@ -17,8 +17,8 @@
 
 ## Apresentação em Vídeo
 <p align="center">
-  <video src="videos/Gravação de Tela 2025-11-27 204346.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none"></video>
-  <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none"></video>
+  <video src="videos/Gravação de Tela 2025-11-27 204346.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
+  <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
 </p>
 
 ## Visão Geral
@@ -59,15 +59,7 @@
 - Galeria: atualização automática com transição suave
 - Agendamento: texto simples e link externo
 
-## Integrações
-- Agendamento: CashBarber (botão “Agendar agora”)
-- Contato: WhatsApp no topo do site
-
-## Melhorias futuras sugeridas
-- Otimizar imagens (WebP/AVIF) e lazy‑loading
-- Adicionar testes de acessibilidade (contraste/alt/tamanho de fonte)
-- Internacionalização básica (pt‑BR/en)
-- Automatizar deploy (GitHub Actions) para Pages
+ 
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:c6a15b,100:1a1a1a&height=110&section=footer&text=Obrigado!&fontColor=ffffff&fontSize=28&animation=fadeIn" alt="footer banner" />
