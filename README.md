@@ -109,6 +109,22 @@ git push -u origin gh-pages
 - Slider com auto‑play, controle por abas e teclas — experiência fluida.
  - Badges animados e banner ondulado no README para destacar ações.
 
+### Carrossel (prévia animada)
+<p align="center">
+  <video src="imagens/AQNjtt_rhSlSviu71hGQDyJTbA87P26u7im8jMEqgcbVX7WKajal_c-43vLgouZJAixYAdQ2KvXZTLQYV0_cuOFKkoxqhRJB.mp4" width="760" autoplay loop muted playsinline></video>
+</p>
+
+### Prévia visual estática
+<p align="center">
+  <img src="imagens/corte-1.jpg" alt="Corte 1" width="220" />
+  <img src="imagens/corte-2.jpg" alt="Corte 2" width="220" />
+  <img src="imagens/corte-3.jpg" alt="Corte 3" width="220" />
+</p>
+<p align="center">
+  <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="280" />
+  <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="280" />
+</p>
+
 ## Melhorias futuras sugeridas
 - Otimizar imagens (WebP/AVIF) e lazy‑loading.
 - Adicionar testes de acessibilidade (contraste/alt/tamanho de fonte).
