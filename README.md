@@ -43,14 +43,7 @@
 - Slider com auto‑play, abas e teclas ← →
 - Ícones SVG e paleta em `c6a15b` alinhados ao tema da barbearia
 
-## Screenshots
-<p align="center">
-  <img src="imagens/barber-bg-min.jpg" alt="Hero do site" width="760" />
-</p>
-<p align="center">
-  <img src="imagens/profissional-1.jpg" alt="Profissional 1" width="320" />
-  <img src="imagens/profissional-2.jpg" alt="Profissional 2" width="320" />
-</p>
+
 
 ## Componentes do Site
 - Hero: título, subtítulo e CTA para agendamento
