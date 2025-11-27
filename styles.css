@@ -1,0 +1,156 @@
+/* Bloco-resumo (CSS)
+   O que faz: Define estilos globais (navegação, seções, slider, cartões, galeria, modal).
+   Como alterar:
+   - Fundo das seções com foto: troque as imagens em .section--hero/.section--team etc.
+   - Overlay: ajuste a opacidade do gradiente em .overlay para melhorar a leitura.
+   - Slider: mude dimensões em .slider-image e botões em .slider-btn.
+   - Assinatura/Estrutura/Equipe: personalize cores, bordas e espaçamentos nos blocos correspondentes.
+*/
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#f5f5f5;background:#0e0e0e}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+.header{position:relative}
+.nav{position:sticky;top:0;z-index:1000;background:rgba(10,10,10,.6);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid #1f1f1f;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.nav{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0}
+.brand{font-weight:700;font-size:20px;color:#c6a15b;letter-spacing:.4px;text-align:center;margin-bottom:6px}
+.nav-toggle{display:none;background:transparent;border:0;color:#f5f5f5;font-size:24px}
+.nav-menu{display:flex;gap:18px;align-items:center;justify-content:center}
+.nav-menu a{opacity:.92;text-transform:uppercase;font-size:14px;letter-spacing:.3px;padding:8px 10px;border-radius:10px;position:relative}
+.nav-menu a::after{content:"";position:absolute;left:10px;right:10px;bottom:0;height:2px;background:#c6a15b;border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav-menu a:hover{color:#c6a15b;background:rgba(198,161,91,.08)}
+.nav-menu a:hover::after{transform:scaleX(1)}
+.nav-menu a.active{color:#c6a15b;background:rgba(198,161,91,.12)}
+.nav-menu a.active::after{transform:scaleX(1)}
+.nav-menu .nav-highlight{color:#c6a15b;font-weight:700;border:1px solid #c6a15b;padding:10px 16px;border-radius:999px;font-size:18px;letter-spacing:.4px;background:rgba(198,161,91,.08)}
+@media (max-width:640px){.nav-menu .nav-highlight{font-size:16px;padding:8px 12px}}
+.nav-menu .cta{padding:10px 16px;border-radius:999px;background:#c6a15b;color:#0f0f0f;font-weight:700}
+.nav-menu .cta:hover{background:#d9b66d;color:#0a0a0a}
+.nav-menu #auth-link{padding:10px 16px;border-radius:999px;border:1px solid #c6a15b;color:#c6a15b}
+.nav-menu #auth-link:hover{background:rgba(198,161,91,.12)}
+.hero{position:relative;min-height:68vh;display:flex;align-items:center}
+.hero-content{position:relative;z-index:2}
+.hero h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+.hero p{font-size:18px;opacity:.9;margin:0 0 20px}
+.btn{display:inline-block;border-radius:999px}
+.btn-primary{background:#c6a15b;color:#0e0e0e;padding:12px 18px;font-weight:600}
+.btn-outline{border:1px solid #c6a15b;color:#c6a15b;padding:10px 16px}
+.section{position:relative;padding:70px 0}
+.section h2{font-size:28px;margin:0 0 24px;color:#c6a15b}
+#estrutura h2{text-align:center}
+@font-face{font-family:'Rocket Thunder';src:url('FONTS/Rocket Thunder Shadow.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.rt-heading{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:40px;letter-spacing:.5px;text-align:center}
+/* Sobreposição escura para melhorar a leitura do texto sobre imagens */
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.65))}
+.section--bg{background-size:cover;background-position:center}
+/* Como editar: imagens de fundo das seções com foto */
+.section--hero{background-image:url('imagens/barber-bg-min.jpg')}
+.section--price{background-image:url('imagens/price-bg-min.jpg')}
+.section--team{background-image:url('imagens/barber-team-bg-min.jpg')}
+.section--booking{background-image:url('imagens/working-book-bg-min.jpg')}
+/* Ilustração decorativa dentro do cartão de agendamento */
+.auth-card{position:relative;background-image:url('imagens/razor-blade.png');background-repeat:no-repeat;background-position:right 18px center;background-size:clamp(180px,28vw,320px)}
+@media (max-width:640px){
+  .auth-card{background-position:center top 12px;background-size:clamp(140px,45vw,220px)}
+}
+.section--booking .container.auth-wrapper{min-height:60vh;display:flex;align-items:center;justify-content:center}
+.auth-card{width:100%;max-width:640px;background:rgba(15,15,15,.85);backdrop-filter:saturate(120%) blur(6px);border:1px solid #2a2a2a;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.35);padding:22px}
+.auth-title{text-align:center;margin:0 0 12px;color:#c6a15b;letter-spacing:.5px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#1a1a1a;border:1px solid #262626;border-radius:14px;padding:20px}
+.card .icon{width:48px;height:48px;margin-bottom:10px}
+.card h3{margin:0 0 6px}
+.card p{margin:0;opacity:.85}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative;z-index:2}
+.price-card{background:rgba(20,20,20,.85);backdrop-filter:saturate(120%) blur(4px);border:1px solid #2a2a2a;border-radius:14px;padding:20px;text-align:center}
+.price{font-size:28px;color:#c6a15b;margin:8px 0 18px}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;position:relative;z-index:2}
+.member{background:rgba(20,20,20,.85);border:1px solid #2a2a2a;border-radius:14px;padding:14px;text-align:center}
+.member img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}
+@media (min-width:1000px){
+  .member img{max-height:420px}
+}
+ .member .bio-long{margin-top:12px;font-size:16px;line-height:1.7;background:rgba(15,15,15,.7);border:1px solid #2a2a2a;border-radius:10px;padding:12px 14px;text-align:left}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid #2a2a2a;opacity:1;transform:scale(1);filter:blur(0);transition:opacity .5s ease, transform .5s ease, filter .5s ease}
+.gallery img.fade{opacity:0;transform:scale(.98);filter:blur(8px)}
+#galeria .cortes-title{text-align:center}
+/* Abaixo removemos estilos antigos de formulários e abas
+   que não são mais usados após adotarmos agendamento externo */
+.footer{background:#0a0a0a;border-top:1px solid #1f1f1f;padding:28px 0}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.icon-whatsapp{width:20px;height:20px;vertical-align:middle;margin-right:8px}
+.icon-whatsapp circle{fill:#25D366}
+.icon-whatsapp path{fill:#ffffff}
+.icon-instagram{width:20px;height:20px;vertical-align:middle;margin-right:8px}
+@media (max-width:900px){
+  .cards,.pricing,.team{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .form-row{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .nav-toggle{display:block}
+  .nav-menu{display:none;position:absolute;top:60px;left:50%;transform:translateX(-50%);background:#121212;border:1px solid #222;border-radius:12px;padding:10px;flex-direction:column;align-items:center}
+  .hero h1{font-size:30px}
+  .cards,.pricing,.team{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .form-row{grid-template-columns:1fr}
+}
+.nav-menu.open{display:flex}
+@media (max-width:640px){.nav-menu a{padding:10px 12px;font-size:13px}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;z-index:9999}
+.modal.open{display:flex}
+.modal-content{position:relative;width:92%;max-width:880px;background:#0f0f0f;border:1px solid #2a2a2a;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.5);padding:12px}
+.modal-content video{width:100%;aspect-ratio:16/9;border-radius:12px}
+.modal-close{position:absolute;top:8px;right:10px;background:transparent;border:0;color:#f5f5f5;font-size:20px}
+.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.promo-item{background:#1a1a1a;border:1px solid #262626;border-radius:14px;overflow:hidden}
+.promo-item img,.promo-item video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+ .promo-actions{display:flex;gap:10px;margin-bottom:12px}
+ .promo-actions input{flex:1;padding:10px;border-radius:10px;border:1px solid #2a2a2a;background:#141414;color:#f5f5f5}
+@media (max-width:900px){.promo-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.promo-grid{grid-template-columns:1fr}}
+/* Slider genérico: estrutura e posicionamento */
+.slider{position:relative;display:flex;align-items:center;justify-content:center}
+/* Imagem/vídeo dentro do slider: limita largura e aplica sombra */
+.slider-image{width:100%;max-width:900px;object-fit:contain;background:#000;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.4);border:none}
+/* Na seção estrutura, o vídeo fica um pouco menor */
+#estrutura .slider-image{margin:0 auto;max-width:640px}
+/* Botões de navegação do slider (prev/next) */
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,20,20,.8);border:1px solid #2a2a2a;color:#f5f5f5;border-radius:999px;width:36px;height:36px;font-size:22px;line-height:0}
+.slider-btn.prev{left:10px}
+.slider-btn.next{right:10px}
+/* Abas abaixo do slider para escolher imagens */
+.slider-tabs{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.slider-tab{padding:10px 16px;border-radius:12px;border:2px solid #c6a15b;background:#0f0f0f;color:#c6a15b;font-weight:600;letter-spacing:.2px}
+.slider-tab:hover{background:#1a1a1a;color:#d9b66d}
+.slider-tab.active{background:#c6a15b;color:#0f0f0f;border-color:#c6a15b}
+  /* Layout da seção de assinatura: imagem à esquerda, texto à direita */
+  .assinatura-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:start}
+ .assinatura-media{display:flex;flex-direction:column;gap:10px}
+  /* Cartão com informações e CTA da assinatura */
+  .assinatura-info{background:rgba(15,15,15,.85);border:1px solid #2a2a2a;border-radius:16px;padding:20px;text-align:center}
+ .assinatura-info h3{margin:0 0 10px;color:#c6a15b}
+ .assinatura-info p{margin:8px 0}
+ .assinatura-list{list-style:none;padding:0;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+ .assinatura-list li{background:#0f0f0f;border:1px solid #2a2a2a;border-radius:10px;padding:10px;color:#f5f5f5}
+ .assinatura-cta{margin-top:12px;display:flex;flex-direction:column;gap:8px;align-items:center}
+ .assinatura-note{font-size:13px;opacity:.85}
+  @media (max-width:900px){.assinatura-grid{grid-template-columns:1fr}}
+/* Cadastro em uma coluna */
+#signup-form .form-row{grid-template-columns:1fr}
+#assinatura .container{position:relative}
+#assinatura .side-razor{position:absolute;right:-20px;bottom:-30px;z-index:2;pointer-events:none}
+#assinatura .side-razor img{width:220px;opacity:.35;filter:drop-shadow(0 8px 16px rgba(0,0,0,.45))}
+@media (max-width:900px){#assinatura .side-razor{display:none}}
+/* Elemento decorativo à esquerda da seção de equipe */
+#equipe .side-left-tools{position:absolute;left:10px;bottom:-250px;z-index:2;pointer-events:none}
+#equipe .side-left-tools img{width:420px;opacity:.35;filter:drop-shadow(0 4px 10px rgba(0,0,0,.28))}
+@media (max-width:900px){#equipe .side-left-tools{display:none}}
+
+/* Agendamento copy */
+/* Texto e botão da seção de agendamento */
+.agendamento-desc{margin:10px auto 16px;max-width:700px;opacity:.9}
+.agendamento-cta{display:flex;justify-content:center}
