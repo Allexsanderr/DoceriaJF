@@ -21,7 +21,18 @@ Um site institucional moderno, focado em agendamento externo, visual forte e exp
   <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
 </p>
 
-🚀 Visão Geral
+� Screenshots
+<p align="center">
+  <img src="imagens/1.png" alt="Hero desktop" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
+  <img src="imagens/2.png" alt="Assinatura mensal" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
+</p>
+<p align="center">
+  <img src="imagens/3.png" alt="Agendamento e rodapé" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
+  <img src="imagens/4.png" alt="Menu mobile" width="320" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
+  <img src="imagens/5.png" alt="Assinatura após 1º mês" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
+</p>
+
+�🚀 Visão Geral
 - Single Page com seções: Hero, Assinatura, Estrutura (vídeo), Equipe, Galeria, Agendamento e Rodapé
 - Agendamento externo via CashBarber (sem login/cadastro)
 - Comentários em português em HTML/CSS/JS para facilitar a manutenção
