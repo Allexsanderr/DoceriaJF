@@ -1,66 +1,85 @@
-# Barbearia TK DU CORTE — Apresentação Animada
+# ⚡ Barbearia TK DU CORTE
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:c6a15b&height=110&section=header&text=Barbearia%20TK%20DU%20CORTE&fontColor=ffffff&fontSize=36&animation=fadeIn" alt="banner" />
-</p>
-<p align="center">
-  <img src="imagens/razor-blade.png" alt="Logo TK DU CORTE" width="120" />
-</p>
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=22&duration=2800&pause=800&color=C6A15B&center=true&vCenter=true&width=700&lines=Estilo%2C+precis%C3%A3o+e+experi%C3%AAncia;Agende+seu+corte+agora;Visual+moderno+com+slider+e+galeria+animados" alt="typing animation" />
-</p>
-<p align="center">
-  <a href="https://cashbarber.com.br/barbeariatkducorte" target="_blank">
-    <img src="https://img.shields.io/badge/Agendar%20agora-💈%20TK%20DU%20CORTE-c6a15b?style=for-the-badge&labelColor=0f0f0f" alt="Agendar agora" />
-  </a>
-</p>
+Um site institucional moderno, focado em agendamento externo, visual forte e experiência simples.
 
-## Apresentação em Vídeo
+📸 Screenshots • 🚀 Quick Start • 💬 Suporte
+
+✨ Destaques
+┌─────────────────────────────────────────────────────┐
+│   💈 SITE INSTITUCIONAL DA BARBEARIA               │
+│                                                     │
+│   ✅ Agendamento Externo     ✅ Slider Assinatura   │
+│   ✅ Galeria Animada         ✅ Vídeo Promocional   │
+│   ✅ 100% Responsivo         ✅ Zero Dependências   │
+│   ✅ Navegação Suave         ✅ Design Moderno      │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+
+📸 Prévia Visual
 <p align="center">
   <video src="videos/Gravação de Tela 2025-11-27 204346.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
   <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
 </p>
 
-## Visão Geral
-- Site institucional com foco em agendamento externo via CashBarber.
-- Conteúdo visual forte, navegação simples e seções diretas (Hero, Assinatura, Estrutura, Equipe, Galeria e Agendamento).
-- Comentários didáticos em português no código para facilitar manutenção.
+🚀 Visão Geral
+- Single Page com seções: Hero, Assinatura, Estrutura (vídeo), Equipe, Galeria, Agendamento e Rodapé
+- Agendamento externo via CashBarber (sem login/cadastro)
+- Comentários em português em HTML/CSS/JS para facilitar a manutenção
 
-## Tecnologias Utilizadas
-- Linguagens: HTML5, CSS3, JavaScript (vanilla)
-- Estilos: CSS Grid/Flex, responsividade e overlay com gradiente
-- Ícones: SVG inline (WhatsApp/Instagram)
-- Tipografia: Rocket Thunder para títulos
-- Mídia: vídeo `playsinline` e `muted` no modal
-- Sem frameworks: código leve e direto
-
-## Principais Funcionalidades
-- Agendamento externo com CTA no topo e seção dedicada
+🚀 Features Principais
+- Agendamento externo (CTA topo e seção dedicada)
 - Slider da Assinatura com prev/next, auto‑play e abas
-- Galeria de cortes com transição suave e atualização automática
+- Galeria de cortes com transição suave e pré‑carregamento
 - Modal de vídeo que pausa ao fechar
 - Navegação com rolagem suave e estado ativo
-- Elementos decorativos com opacidade que reforçam o tema visual
+- Elementos decorativos com opacidade reforçando o tema visual
 
-## Animações e Visual
-- Banner ondulado animado e badges temáticos
-- Duas animações de digitação (frases chave do site)
+🏗️ Arquitetura e Estrutura de Pastas
+```
+📦 TKDUCORTEBARBEARIA
+├── 📄 index.html          → Página principal (seções + comentários)
+├── 🎨 styles.css          → Estilos globais + animações + responsivo
+├── ⚙️  script.js           → Navegação, slider, galeria, modal de vídeo
+├── 🖼️ imagens/            → Assets (fundos, cortes, equipe)
+├── 🎞️ videos/             → Apresentações em vídeo (mp4)
+├── 🔤 fonts/              → Rocket Thunder (títulos)
+└── 📚 README.md           → Este arquivo
+```
+
+🔗 Referências a Trechos do Código
+- Agendamento externo (CTA): `index.html`
+- Slider Assinatura (auto‑play, prev/next, abas): `script.js`
+- Galeria com transição suave e pré‑carregamento: `script.js`
+- Modal de vídeo com pausa ao fechar: `script.js`
+- Navegação com rolagem suave e estado ativo: `script.js`
+
+🎨 Animações e Visual
+- Paleta: `#c6a15b` (dourado), fundo escuro, alto contraste
 - Efeito de transição (fade) na Galeria
 - Slider com auto‑play, abas e teclas ← →
-- Ícones SVG e paleta em `c6a15b` alinhados ao tema da barbearia
+- Ícones/Emojis temáticos: 💈 ✂️ 🧔‍♂️ ✨
 
+⚡ Quick Start
+1️⃣ Clone o repositório
+```
+git clone https://github.com/Allexsanderr/TKDUCORTEBARBEARIA.git
+cd TKDUCORTEBARBEARIA
+```
+2️⃣ Abra no navegador
+```
+# Opção 1: Abrir diretamente
+start index.html
 
+# Opção 2: Servidor local (recomendado)
+python -m http.server 8000
+# Acesse: http://localhost:8000
+```
+3️⃣ Explore as seções e o agendamento 💈
 
-## Componentes do Site
-- Hero: título, subtítulo e CTA para agendamento
-- Assinatura: slider com prev/next, auto‑play e abas
-- Estrutura: vídeo da barbearia com controles
-- Equipe: cards com fotos e nomes
-- Galeria: atualização automática com transição suave
-- Agendamento: texto simples e link externo
+🎨 Customização
+- Cores em `styles.css` (ajuste primária, fundo, texto)
+- Tipografia Rocket Thunder para títulos
+- Seções e comentários “Como editar” em `index.html`
 
- 
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:c6a15b,100:1a1a1a&height=110&section=footer&text=Obrigado!&fontColor=ffffff&fontSize=28&animation=fadeIn" alt="footer banner" />
-</p>
+💬 Suporte
+- Abra uma issue no repositório para dúvidas e melhorias
