@@ -1,96 +1,94 @@
-# ⚡ Barbearia TK DU CORTE
+# 🍰 Doceria Doce Sabor
 
-Um site institucional moderno, focado em agendamento externo, visual forte e experiência simples.
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-📸 Screenshots • 🚀 Quick Start • 💬 Suporte
+> *“Sabor que adoça a alma.”*
 
-✨ Destaques
-┌─────────────────────────────────────────────────────┐
-│   💈 SITE INSTITUCIONAL DA BARBEARIA               │
-│                                                     │
-│   ✅ Agendamento Externo     ✅ Slider Assinatura   │
-│   ✅ Galeria Animada         ✅ Vídeo Promocional   │
-│   ✅ 100% Responsivo         ✅ Zero Dependências   │
-│   ✅ Navegação Suave         ✅ Design Moderno      │
-│                                                     │
-└─────────────────────────────────────────────────────┘
+Bem-vindo ao repositório oficial da **Doceria Doce Sabor**. Este projeto consiste em um website institucional moderno, desenvolvido com foco em **design responsivo**, **experiência do usuário (UX)** e **interatividade**.
 
-📸 Prévia Visual
-<p align="center">
-  <video src="videos/Gravação de Tela 2025-11-27 204346.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
-  <video src="videos/Gravação de Tela 2025-11-27 204426.mp4" width="420" autoplay muted loop playsinline style="pointer-events:none;border:2px solid #c6a15b;border-radius:8px;margin:0 6px"></video>
-</p>
+---
 
-� Screenshots
-<p align="center">
-  <img src="imagens/1.png" alt="Hero desktop" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
-  <img src="imagens/2.png" alt="Assinatura mensal" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
-</p>
-<p align="center">
-  <img src="imagens/3.png" alt="Agendamento e rodapé" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
-  <img src="imagens/4.png" alt="Menu mobile" width="320" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
-  <img src="imagens/5.png" alt="Assinatura após 1º mês" width="420" style="border:2px solid #c6a15b;border-radius:8px;margin:0 6px" />
-</p>
+## 📸 Demonstração
 
-�🚀 Visão Geral
-- Single Page com seções: Hero, Assinatura, Estrutura (vídeo), Equipe, Galeria, Agendamento e Rodapé
-- Agendamento externo via CashBarber (sem login/cadastro)
-- Comentários em português em HTML/CSS/JS para facilitar a manutenção
+O site apresenta uma identidade visual elegante, utilizando tons de framboesa, rosa pálido e chocolate para despertar o apetite e transmitir sofisticação.
 
-🚀 Features Principais
-- Agendamento externo (CTA topo e seção dedicada)
-- Slider da Assinatura com prev/next, auto‑play e abas
-- Galeria de cortes com transição suave e pré‑carregamento
-- Modal de vídeo que pausa ao fechar
-- Navegação com rolagem suave e estado ativo
-- Elementos decorativos com opacidade reforçando o tema visual
+### ✨ Destaques do Projeto
 
-🏗️ Arquitetura e Estrutura de Pastas
-```
-📦 TKDUCORTEBARBEARIA
-├── 📄 index.html          → Página principal (seções + comentários)
-├── 🎨 styles.css          → Estilos globais + animações + responsivo
-├── ⚙️  script.js           → Navegação, slider, galeria, modal de vídeo
-├── 🖼️ imagens/            → Assets (fundos, cortes, equipe)
-├── 🎞️ videos/             → Apresentações em vídeo (mp4)
-├── 🔤 fonts/              → Rocket Thunder (títulos)
-└── 📚 README.md           → Este arquivo
-```
+*   **🎨 Design Premium:** Interface limpa com tipografia cursiva (*Dancing Script*) e moderna (*Lato*).
+*   **📱 Totalmente Responsivo:** Layout fluido que se adapta a Celulares, Tablets e Desktops.
+*   **🛒 Carrinho Interativo:** Feedback visual imediato ao adicionar produtos.
+*   **🔍 Filtro de Produtos:** Navegação por abas (Bolos, Doces, Tortas) sem recarregar a página.
+*   **✨ Scroll Reveal:** Elementos surgem suavemente na tela conforme a rolagem.
+*   **🖼️ Fallback Inteligente:** Sistema de substituição automática de imagens caso a conexão falhe.
 
-🔗 Referências a Trechos do Código
-- Agendamento externo (CTA): `index.html`
-- Slider Assinatura (auto‑play, prev/next, abas): `script.js`
-- Galeria com transição suave e pré‑carregamento: `script.js`
-- Modal de vídeo com pausa ao fechar: `script.js`
-- Navegação com rolagem suave e estado ativo: `script.js`
+---
 
-🎨 Animações e Visual
-- Paleta: `#c6a15b` (dourado), fundo escuro, alto contraste
-- Efeito de transição (fade) na Galeria
-- Slider com auto‑play, abas e teclas ← →
-- Ícones/Emojis temáticos: 💈 ✂️ 🧔‍♂️ ✨
+## 🛠️ Tecnologias Utilizadas
 
-⚡ Quick Start
-1️⃣ Clone o repositório
-```
-git clone https://github.com/Allexsanderr/TKDUCORTEBARBEARIA.git
-cd TKDUCORTEBARBEARIA
-```
-2️⃣ Abra no navegador
-```
-# Opção 1: Abrir diretamente
-start index.html
+Abaixo, as ferramentas e tecnologias aplicadas no desenvolvimento:
 
-# Opção 2: Servidor local (recomendado)
+| Tecnologia | Descrição |
+| :--- | :--- |
+| **HTML5** | Estruturação semântica e acessível do conteúdo. |
+| **CSS3** | Estilização avançada com Flexbox, Grid Layout e Variáveis CSS. |
+| **JavaScript** | Lógica de interação, manipulação do DOM e animações. |
+| **FontAwesome** | Ícones vetoriais para interface. |
+| **Google Fonts** | Fontes *Dancing Script*, *Playfair Display* e *Lato*. |
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Você pode visualizar este projeto de duas formas:
+
+### 1. Acesso Direto (Local)
+Basta baixar os arquivos e abrir o `index.html` no seu navegador favorito (Chrome, Firefox, Edge).
+
+### 2. Servidor Local (Recomendado)
+Para evitar problemas com caminhos de arquivos ou políticas de segurança (CORS):
+
+```bash
+# Se tiver Python instalado:
 python -m http.server 8000
-# Acesse: http://localhost:8000
 ```
-3️⃣ Explore as seções e o agendamento 💈
 
-🎨 Customização
-- Cores em `styles.css` (ajuste primária, fundo, texto)
-- Tipografia Rocket Thunder para títulos
-- Seções e comentários “Como editar” em `index.html`
+Em seguida, acesse: `http://localhost:8000`
 
-💬 Suporte
-- Abra uma issue no repositório para dúvidas e melhorias
+---
+
+## 📂 Estrutura de Pastas
+
+```
+/
+├── index.html      # Estrutura principal
+├── styles.css      # Estilos e responsividade
+├── script.js       # Interatividade e lógica
+└── README.md       # Documentação do projeto
+```
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma **Issue** ou enviar um **Pull Request**.
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
+3. Faça o Commit (`git commit -m 'Adicionando nova feature'`)
+4. Faça o Push (`git push origin feature/NovaFeature`)
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+<p align="center">
+  Feito com ❤️ por Trae AI
+</p>

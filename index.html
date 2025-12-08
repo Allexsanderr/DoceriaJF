@@ -1,205 +1,294 @@
 <!DOCTYPE html>
-<!-- Observações: Este HTML está comentado em português para facilitar a edição.
-     Procure por comentários "Como editar" em cada seção para saber onde mudar conteúdo. -->
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BARBEARIA TK DU CORTE</title>
+<title>Doceria Doce Sabor | Bolos e Doces Artesanais</title>
 <link rel="stylesheet" href="styles.css">
+<!-- Fonte Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
-  <!-- Cabeçalho e navegação principal -->
-  <div class="container nav">
-    <a href="#home" class="brand">TK DU CORTE</a>
-    <button class="nav-toggle" aria-label="Abrir menu">☰</button>
-    <!-- Links de navegação para rolar a página -->
-    <nav class="nav-menu">
-      <a href="#estrutura">Nossa Estrutura</a>
-      <a href="#equipe">Equipe</a>
-      <a href="#galeria">Galeria</a>
-      <!-- Como editar: link de contato no topo; atualmente abre WhatsApp -->
-      <a href="https://wa.me/553299130371" target="_blank" rel="noopener noreferrer">Contato</a>
-      <!-- Como editar: texto do botão principal de ação -->
-      <a href="#agendamento" class="cta">Agendar</a>
-    </nav>
-  </div>
-  <!-- Bloco-resumo (Hero)
-       O que faz: Apresenta o título principal e um botão de ação (CTA) para agendar.
-       Como alterar: Edite o texto do <h1> e <p>. Se quiser mudar o fundo, troque a imagem em styles.css (.section--hero).
-       Para alterar o link do botão, edite o atributo href do botão abaixo. -->
-  <section id="home" class="hero section section--bg section--hero">
+    <div class="container nav">
+      <a href="#home" class="brand">Doce Sabor <i class="fa-solid fa-cake-candles"></i></a>
+      <button class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-menu">
+        <a href="#destaques">Menu</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="cta">Encomendar <i class="fa-brands fa-whatsapp"></i></a>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="home" class="hero section">
+    <div class="hero-bg-img" style="background-image: url('https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9');"></div>
     <div class="overlay"></div>
     <div class="container hero-content">
-      <!-- Como editar: título principal do site -->
-      <h1>Corte clássico com toque moderno</h1>
-      <p>💈 Conforto, estilo e experiência desde 2017.</p>
-      <!-- Como editar: link do botão de agendamento -->
-      <a href="#agendamento" class="btn btn-primary">Agendar agora</a>
+      <span class="hero-subtitle">Confeitaria Artesanal</span>
+      <h1>Sabor que adoça a alma</h1>
+      <p>Transformamos os melhores ingredientes em memórias inesquecíveis. Bolos, tortas e doces finos para todos os seus momentos especiais.</p>
+      <div class="hero-buttons">
+        <a href="#destaques" class="btn btn-primary">Ver Cardápio</a>
+        <a href="#contato" class="btn btn-outline">Fazer Pedido</a>
+      </div>
     </div>
   </section>
 
-  <!-- Bloco-resumo (Assinatura Mensal)
-       O que faz: Mostra a promoção e um slider com imagens.
-       Como alterar: Troque as imagens do slider na lista "names" dentro de script.js.
-       Edite os textos de oferta nesta coluna. As abas abaixo do slider podem ser renomeadas aqui. -->
-  <section id="assinatura" class="section">
+  <section id="features" class="section section-features">
+    <div class="container feature-grid">
+      <div class="feature-item">
+        <i class="fa-solid fa-star"></i>
+        <h3>Ingredientes Premium</h3>
+        <p>Selecionamos o melhor chocolate, frutas frescas e farinhas nobres.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Feito com Amor</h3>
+        <p>Produção 100% artesanal, cuidando de cada detalhe da decoração.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Entrega Rápida</h3>
+        <p>Receba suas delícias fresquinhas no conforto da sua casa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="destaques" class="section">
     <div class="container">
-      <h2 class="rt-heading">CORTE POR ASSINATURA MENSAL</h2>
-      <div class="assinatura-grid">
-        <div class="assinatura-media">
-          <div class="slider" id="assinatura-slider">
-            <!-- Botão para voltar imagem do slider -->
-            <button class="slider-btn prev" aria-label="Anterior">‹</button>
-            <img class="slider-image" alt="Assinatura">
-            <!-- Botão para avançar imagem do slider -->
-            <button class="slider-btn next" aria-label="Próximo">›</button>
+      <div class="section-header">
+        <h2 class="rt-heading">Nossas Especialidades</h2>
+        <p>Confira os favoritos dos nossos clientes</p>
+      </div>
+      
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-category="todos">Todos</button>
+        <button class="menu-tab" data-category="bolos">Bolos</button>
+        <button class="menu-tab" data-category="doces">Doces Finos</button>
+        <button class="menu-tab" data-category="tortas">Tortas</button>
+      </div>
+
+      <div class="products-grid">
+        <!-- Produto 1 -->
+        <div class="product-card" data-category="bolos">
+          <div class="product-img">
+            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Close+up+shot+of+a+decadent+rich+chocolate+cake+with+ganache+and+berries%2C+professional+food+photography%2C+appetizing&image_size=square" alt="Bolo de Chocolate">
+            <span class="badge">Mais Vendido</span>
+          </div>
+          <div class="product-info">
+            <h3>Bolo Trufado Real</h3>
+            <p class="desc">Massa úmida de cacau 100%, recheio de ganache meio amargo e frutas vermelhas.</p>
+            <div class="price-row">
+              <span class="price">R$ 120,00/kg</span>
+              <button class="btn-cart" aria-label="Adicionar"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
           </div>
         </div>
-        <div class="assinatura-info">
-          <h3>💈 OFERTA IMPERDÍVEL NA TK DU CORTE! 💥</h3>
-          <p>Imagina cortar o cabelo quantas vezes quiser pagando o valor de apenas um corte no primeiro mês?! 😱 É isso mesmo!</p>
-          <p>Nosso plano de corte ilimitado está com promoção especial de lançamento — e você ainda pode escolher:</p>
-          <ul class="assinatura-list">
-            <li>🔥 Plano Corte Ilimitado</li>
-            <li>🔥 Plano Barba Ilimitada</li>
-            <li>🔥 Plano Corte + Barba Ilimitados</li>
-          </ul>
-          <p>Assine agora e garanta o seu lugar nessa vantagem exclusiva! 💳</p>
-          <p>Mas atenção: é por tempo LIMITADO ⏳</p>
-          <div class="assinatura-cta">
-            <!-- Botão para agendar diretamente (substitui o antigo cadastro) -->
-            <a href="https://cashbarber.com.br/barbeariatkducorte" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Agendar agora</a>
-            <p class="assinatura-note">📲 Cadastre-se agora, curta, siga e compartilhe com os amigos!</p>
+
+        <!-- Produto 2 -->
+        <div class="product-card" data-category="tortas">
+          <div class="product-img">
+            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Gourmet+strawberry+tart+with+custard+cream%2C+fresh+strawberries%2C+mint+leaf%2C+elegant+presentation%2C+food+photography&image_size=square" alt="Torta de Morango">
+          </div>
+          <div class="product-info">
+            <h3>Torta de Morango</h3>
+            <p class="desc">Base crocante de amêndoas, creme patissière aveludado e morangos frescos.</p>
+            <div class="price-row">
+              <span class="price">R$ 85,00</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card" data-category="doces">
+          <div class="product-img">
+            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Brazilian+gourmet+brigadeiros+chocolate+truffles+with+sprinkles%2C+arranged+on+a+golden+tray%2C+high+quality&image_size=square" alt="Brigadeiros Gourmet">
+          </div>
+          <div class="product-info">
+            <h3>Caixa Degustação</h3>
+            <p class="desc">Seleção com 12 brigadeiros gourmet variados: Belga, Ninho, Churros e Pistache.</p>
+            <div class="price-row">
+              <span class="price">R$ 45,00</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produto 4 -->
+        <div class="product-card" data-category="bolos">
+          <div class="product-img">
+            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Elegant+vanilla+cupcake+with+pink+buttercream+frosting+and+edible+gold+dust%2C+soft+lighting&image_size=square" alt="Cupcakes">
+          </div>
+          <div class="product-info">
+            <h3>Cupcakes Especiais</h3>
+            <p class="desc">Massa fofinha de baunilha com cobertura de buttercream suíço e decoração em ouro.</p>
+            <div class="price-row">
+              <span class="price">R$ 15,00/un</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slider-tabs" id="assinatura-tabs">
-        <!-- Como editar: rótulos das abas do slider de assinatura -->
-        <button class="slider-tab" data-index="0">Cabelo</button>
-        <button class="slider-tab" data-index="1">Barba</button>
-        <button class="slider-tab" data-index="2">Corte e Barba</button>
-        <button class="slider-tab" data-index="3">Após 1º mês</button>
-      </div>
-      <div class="side-razor"><img src="imagens/razor-blade.png" alt="Aparelho de barbear"></div>
-    </div>
-  </section>
-</header>
-
-<main>
-  <!-- Bloco-resumo (Nossa Estrutura)
-       O que faz: Exibe um vídeo da barbearia.
-       Como alterar: Substitua o arquivo do vídeo no atributo src abaixo.
-       Para ajustar tamanho/estilo, veja styles.css (#estrutura .slider-image). -->
-  <section id="estrutura" class="section">
-    <div class="container">
-      <h2>Nossa Estrutura</h2>
-      <div class="slider" id="estrutura-video">
-        <!-- Como editar: troque o arquivo do vídeo abaixo -->
-        <video class="slider-image" src="imagens/AQNjtt_rhSlSviu71hGQDyJTbA87P26u7im8jMEqgcbVX7WKajal_c-43vLgouZJAixYAdQ2KvXZTLQYV0_cuOFKkoxqhRJB.mp4" controls playsinline></video>
-      </div>
     </div>
   </section>
 
-
-  <!-- Bloco-resumo (Equipe)
-       O que faz: Lista os profissionais com foto e nome.
-       Como alterar: Troque as imagens e edite cada <h3> com o nome desejado.
-       Há um elemento decorativo à esquerda configurado em styles.css (#equipe .side-left-tools). -->
-  <section id="equipe" class="section section--bg section--team">
-    <div class="overlay"></div>
-    <div class="container">
-      <h2>Equipe</h2>
-      <div class="team">
-        <div class="member">
-          <img src="imagens/profissional-1.jpg" alt="Profissional" onerror="this.src='imagens/03_port_03-min.jpg'" />
-          <!-- Como editar: nome do primeiro profissional -->
-          <h3>Tony Kroos</h3>
-        </div>
-        <div class="member">
-          <img src="imagens/profissional-2.jpg" alt="Profissional" onerror="this.src='imagens/03_port_03-min.jpg'" />
-          <!-- Como editar: nome do segundo profissional -->
-          <h3>Francesco Ferraz</h3>
+  <section id="sobre" class="section section--bg-alt">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Pastry+chef+decorating+a+wedding+cake+with+focus+and+precision%2C+clean+white+uniform%2C+professional+kitchen+background&image_size=portrait_4_3" alt="Nossa Chef">
+        <div class="experience-badge">
+          <span class="number">10+</span>
+          <span class="text">Anos de<br>Tradição</span>
         </div>
       </div>
+      <div class="about-text">
+        <span class="pre-title">Nossa História</span>
+        <h2>Arte em forma de doce</h2>
+        <p>A <strong>Doce Sabor</strong> nasceu do sonho de levar doçura e sofisticação para a mesa das famílias. Começamos na pequena cozinha da vovó e hoje somos referência em confeitaria artística na região.</p>
+        <p>Cada receita carrega um segredo: o equilíbrio perfeito entre a técnica francesa e o calor brasileiro. Não vendemos apenas doces, entregamos experiências que marcam celebrações.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Chocolate Belga autêntico</li>
+          <li><i class="fa-solid fa-check"></i> Frutas orgânicas selecionadas</li>
+          <li><i class="fa-solid fa-check"></i> Sem conservantes artificiais</li>
+        </ul>
+        <a href="#contato" class="btn btn-primary">Conheça Nossa Cozinha</a>
+      </div>
     </div>
-    <div class="side-left-tools"><img src="imagens/tools-left.png" alt="Ferramentas de barbearia"></div>
   </section>
 
-  <!-- Bloco-resumo (Galeria de Cortes)
-       O que faz: Mostra cortes e troca automaticamente as imagens.
-       Como alterar: Adicione arquivos imagens/corte-1.jpg até corte-20.jpg.
-       Em script.js você pode ajustar o intervalo de troca (3 segundos). -->
   <section id="galeria" class="section">
     <div class="container">
-      <h2 class="cortes-title">CORTES</h2>
-      <div class="gallery">
-        <!-- Como editar: adicione/edite imagens de cortes abaixo. 
-             O JavaScript também atualiza automaticamente com arquivos corte-1.jpg até corte-20.jpg. -->
-        <img src="imagens/corte-1.jpg" alt="Corte" onerror="this.src='imagens/03_port_03-min.jpg'" />
-        <img src="imagens/corte-2.jpg" alt="Corte" onerror="this.src='imagens/03_port_03-min.jpg'" />
-        <img src="imagens/corte-3.jpg" alt="Corte" onerror="this.src='imagens/03_port_03-min.jpg'" />
+      <div class="section-header">
+        <h2 class="rt-heading">Galeria do Instagram</h2>
+        <p>Siga @docesabor e acompanhe nossas criações diárias</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Bloco-resumo (Agendamento)
-       O que faz: Direciona para a plataforma externa de agendamentos.
-       Como alterar: Edite o texto do parágrafo e o link do botão (href).
-       A ilustração dentro do cartão é controlada em styles.css (.auth-card background-image). -->
-  <section id="agendamento" class="section section--bg section--booking">
-    <div class="overlay"></div>
-    <div class="container auth-wrapper">
-      <div class="auth-card">
-        <h2 class="auth-title">Agendamento de Atendimento</h2>
-        <!-- Como editar: texto de apresentação do agendamento -->
-        <p class="agendamento-desc">Agende seu corte, barba ou combo diretamente pela nossa plataforma parceira. É rápido, prático e você escolhe o melhor horário disponível.</p>
-        <div class="agendamento-cta">
-          <!-- Como editar: URL do site externo de agendamento -->
-          <a class="btn btn-primary" href="https://cashbarber.com.br/barbeariatkducorte" target="_blank" rel="noopener noreferrer">Agendar agora</a>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Box+of+colorful+gourmet+donuts+with+various+toppings%2C+top+down+view%2C+bright+and+cheerful&image_size=square" alt="Donuts">
+          <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Tower+of+colorful+french+macarons+pastel+colors+soft+lighting&image_size=square" alt="Macarons">
+          <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Stack+of+freshly+baked+chocolate+chip+cookies+with+melted+chocolate+chunks&image_size=square" alt="Cookies">
+          <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Artistic+wedding+cake+with+sugar+flowers+and+intricate+piping+details+elegant&image_size=square" alt="Bolo Casamento">
+          <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
         </div>
       </div>
     </div>
   </section>
-</main>
 
-<!-- Bloco-resumo (Rodapé)
-     O que faz: Mostra informações de contato, horário e redes.
-     Como alterar: Edite endereço/horário, WhatsApp, e-mail e Instagram.
-     Os ícones (WhatsApp/Instagram) são SVG inline e podem ser substituídos. -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Barbearia TK DU CORTE</h3>
-      <!-- Como editar: endereço e horário de funcionamento -->
-      <p>Rua Silva vidal lage N 18 – Joquei clube 1 </p>
-      <p>Seg–Sáb: 9h às 20h</p>
+  <section id="depoimentos" class="section section--bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que dizem nossos clientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"O bolo de casamento mais lindo e delicioso que já vi! Todos os convidados elogiaram. Obrigada por tornar meu dia especial."</p>
+          <div class="author">
+            <img src="https://placehold.co/50x50/ffb6c1/ffffff?text=M" alt="Cliente">
+            <span>Mariana Costa</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Os docinhos são de outro mundo. O brigadeiro de pistache é simplesmente divino. Recomendo de olhos fechados!"</p>
+          <div class="author">
+            <img src="https://placehold.co/50x50/5d4037/ffffff?text=P" alt="Cliente">
+            <span>Pedro Alves</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Atendimento impecável e entrega pontual. A torta de limão chegou perfeita. Virei cliente fiel!"</p>
+          <div class="author">
+            <img src="https://placehold.co/50x50/ff69b4/ffffff?text=C" alt="Cliente">
+            <span>Carla Dias</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <h3>Contato</h3>
-      <!-- Como editar: WhatsApp e e-mail -->
-      <p><a href="https://wa.me/553299130371" target="_blank" rel="noopener noreferrer"><svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M16.5 14.2l-1.8.8a1 1 0 01-1.1-.2l-1.1-1.1a8.7 8.7 0 01-2.3-3.5 1 1 0 01.2-1.1l.8-1.8a1 1 0 00-.6-1.3l-2.3-.8a1 1 0 00-1.3.5A9.5 9.5 0 009 12.6a9.7 9.7 0 005.4 5.4 9.5 9.5 0 005.1-2.0 1 1 0 00.5-1.3l-.8-2.3a1 1 0 00-1.3-.2z"/></svg>WhatsApp: +55 32 9913-0371</a></p>
-      <p>E-mail: contato@barbeariatkducorte.com</p>
-    </div>
-    <div>
-      <h3>Redes</h3>
-      <!-- Como editar: Instagram -->
-      <p><a href="https://www.instagram.com/tk_du_corte" target="_blank" rel="noopener noreferrer"><svg class="icon-instagram" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f58529"/><stop offset="50%" stop-color="#dd2a7b"/><stop offset="100%" stop-color="#8134af"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#ig)"/><circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/><rect x="7" y="7" width="10" height="10" rx="5" fill="none" stroke="#fff" stroke-width="2"/></svg>@tk_du_corte</a></p>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Bloco-resumo (Modal Promocional)
-     O que faz: Exibe um vídeo promocional em uma janela modal.
-     Como alterar: Atribua a URL do vídeo ao elemento <video> via script ou HTML.
-     Ao fechar (botão ✕), o vídeo pausa automaticamente (ver script.js). -->
-<div id="promo-modal" class="modal" aria-hidden="true">
-  <div class="modal-content">
-    <button class="modal-close" id="promo-close">✕</button>
-    <video id="promo-video" controls playsinline muted></video>
-  </div>
-</div>
+  <section id="contato" class="section section-contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Vamos conversar?</h2>
+          <p>Estamos prontos para adoçar o seu evento. Entre em contato para orçamentos e dúvidas.</p>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Endereço</strong>
+                <p>Av. das Confeitarias, 880 - Jardins</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Telefone</strong>
+                <p>(11) 99999-9999</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>E-mail</strong>
+                <p>encomendas@docesabor.com</p>
+              </div>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label>Seu Nome</label>
+              <input type="text" placeholder="Ex: Maria Silva" required>
+            </div>
+            <div class="form-group">
+              <label>Seu WhatsApp</label>
+              <input type="tel" placeholder="(00) 00000-0000" required>
+            </div>
+            <div class="form-group">
+              <label>Mensagem</label>
+              <textarea rows="4" placeholder="Gostaria de saber o preço do bolo..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Doceria Doce Sabor. Todos os direitos reservados.</p>
+        <p class="designer">Design com ❤️ por Allex </p>
+      </div>
+    </div>
+  </footer>
 
 <script src="script.js"></script>
 </body>
