@@ -1,94 +1,142 @@
 # 🍰 Doceria Doce Sabor
 
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+<p align="center">
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" alt="Banner Doceria" width="100%">
+</p>
 
-> *“Sabor que adoça a alma.”*
+<p align="center">
+  Um website completo e elegante para uma confeitaria artesanal, com design premium e funcionalidades interativas.
+</p>
 
-Bem-vindo ao repositório oficial da **Doceria Doce Sabor**. Este projeto consiste em um website institucional moderno, desenvolvido com foco em **design responsivo**, **experiência do usuário (UX)** e **interatividade**.
-
----
-
-## 📸 Demonstração
-
-O site apresenta uma identidade visual elegante, utilizando tons de framboesa, rosa pálido e chocolate para despertar o apetite e transmitir sofisticação.
-
-### ✨ Destaques do Projeto
-
-*   **🎨 Design Premium:** Interface limpa com tipografia cursiva (*Dancing Script*) e moderna (*Lato*).
-*   **📱 Totalmente Responsivo:** Layout fluido que se adapta a Celulares, Tablets e Desktops.
-*   **🛒 Carrinho Interativo:** Feedback visual imediato ao adicionar produtos.
-*   **🔍 Filtro de Produtos:** Navegação por abas (Bolos, Doces, Tortas) sem recarregar a página.
-*   **✨ Scroll Reveal:** Elementos surgem suavemente na tela conforme a rolagem.
-*   **🖼️ Fallback Inteligente:** Sistema de substituição automática de imagens caso a conexão falhe.
+<p align="center">
+  <a href="#-screenshots">📸 Screenshots</a> • 
+  <a href="#-quick-start">🚀 Quick Start</a> • 
+  <a href="#-suporte">💬 Suporte</a>
+</p>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ✨ Destaques
 
-Abaixo, as ferramentas e tecnologias aplicadas no desenvolvimento:
-
-| Tecnologia | Descrição |
-| :--- | :--- |
-| **HTML5** | Estruturação semântica e acessível do conteúdo. |
-| **CSS3** | Estilização avançada com Flexbox, Grid Layout e Variáveis CSS. |
-| **JavaScript** | Lógica de interação, manipulação do DOM e animações. |
-| **FontAwesome** | Ícones vetoriais para interface. |
-| **Google Fonts** | Fontes *Dancing Script*, *Playfair Display* e *Lato*. |
+┌─────────────────────────────────────────────────────┐
+│   🍰 PLATAFORMA DE CONFEITARIA ARTESANAL           │
+│                                                     │
+│   ✅ Menu Interativo        ✅ Filtro por Categoria │
+│   ✅ Carrinho Simulado      ✅ Galeria do Instagram │
+│   ✅ Lembretes Inteligentes ✅ 100% Responsivo      │
+│   ✅ Scroll Reveal          ✅ Identidade Premium   │
+│   ✅ Design Moderno         ✅ Zero Dependências    │
+│                                                     │
+└─────────────────────────────────────────────────────┘
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 📸 Screenshots
 
-Você pode visualizar este projeto de duas formas:
+<p align="center">
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Close+up+shot+of+a+decadent+rich+chocolate+cake+with+ganache+and+berries%2C+professional+food+photography%2C+appetizing&image_size=landscape_16_9" alt="Destaque Bolo" width="48%" />
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Gourmet+strawberry+tart+with+custard+cream%2C+fresh+strawberries%2C+mint+leaf%2C+elegant+presentation%2C+food+photography&image_size=landscape_16_9" alt="Destaque Torta" width="48%" />
+</p>
 
-### 1. Acesso Direto (Local)
-Basta baixar os arquivos e abrir o `index.html` no seu navegador favorito (Chrome, Firefox, Edge).
+<p align="center">
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Box+of+colorful+gourmet+donuts+with+various+toppings%2C+top+down+view%2C+bright+and+cheerful&image_size=landscape_16_9" alt="Galeria Donuts" width="48%" />
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Tower+of+colorful+french+macarons+pastel+colors+soft+lighting&image_size=landscape_16_9" alt="Galeria Macarons" width="48%" />
+</p>
 
-### 2. Servidor Local (Recomendado)
-Para evitar problemas com caminhos de arquivos ou políticas de segurança (CORS):
+---
+
+## 🚀 Features Principais
+
+### 🛍️ Menu e Produtos
+- **Filtro Inteligente**: Navegue entre Bolos, Doces e Tortas sem recarregar a página.
+- **Carrinho Simulado**: Feedback visual (check ✅) e alerta ao adicionar itens.
+- **Cards Interativos**: Efeito de zoom e destaque ao passar o mouse.
+
+### 🎨 Design & UI
+- **Identidade Premium**: Cores Framboesa e Chocolate para despertar o apetite.
+- **Scroll Reveal**: Elementos surgem suavemente conforme você rola a página.
+- **Tipografia**: Combinação elegante de *Dancing Script* e *Lato*.
+
+### 📱 Responsividade 100%
+- **Desktop**: Layout amplo e imersivo.
+- **Mobile**: Menu hambúrguer funcional e elementos adaptados para toque.
+- **Tablet**: Ajuste automático de grids.
+
+### 🛡️ Robustez
+- **Fallback de Imagens**: Substituição automática por placeholders caso a imagem falhe.
+- **Performance**: Carregamento otimizado de fontes e scripts.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```bash
-# Se tiver Python instalado:
+📦 DOCERIA.DOCESABOR
+├── 📄 index.html              ⭐ Página principal (vitrine)
+│
+├── 🎨 styles.css              → Estilos + animações + responsivo
+├── ⚙️  script.js               → Lógica de menu, filtros e animações
+│
+├── 📚 README.md               → Este arquivo
+└── 📝 .gitignore              → Configuração Git
+```
+
+---
+
+## ⚡ Quick Start
+
+### 1️⃣ Clone o repositório
+```bash
+git clone https://github.com/Allexsanderr/DoceriaJF.git
+cd DoceriaJF
+```
+
+### 2️⃣ Abra no navegador
+
+**Opção 1: Abrir diretamente**
+Basta dar dois cliques no arquivo `index.html`.
+
+**Opção 2: Servidor local (recomendado)**
+```bash
 python -m http.server 8000
+# Acesse: http://localhost:8000
 ```
 
-Em seguida, acesse: `http://localhost:8000`
+### 3️⃣ Aproveite! 🎉
+Navegue pelo cardápio e encante-se com as delícias.
 
 ---
 
-## 📂 Estrutura de Pastas
+## 🎨 Customização
 
+### 🌈 Cores (em `styles.css`)
+```css
+:root {
+  --primary: #d63384;      /* 🍧 Rosa Framboesa */
+  --primary-light: #f8d7da;/* 🌸 Rosa Suave */
+  --secondary: #5d4037;    /* 🍫 Marrom Café */
+  --accent: #ffc107;       /* ✨ Dourado */
+  --bg-body: #fff9fa;      /* 🌫️ Fundo Pálido */
+}
 ```
-/
-├── index.html      # Estrutura principal
-├── styles.css      # Estilos e responsividade
-├── script.js       # Interatividade e lógica
-└── README.md       # Documentação do projeto
+
+### 🔤 Fontes
+```html
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 ```
 
 ---
 
-## 🤝 Contribuição
+## 📱 Responsividade em Ação
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma **Issue** ou enviar um **Pull Request**.
-
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
-3. Faça o Commit (`git commit -m 'Adicionando nova feature'`)
-4. Faça o Push (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
+| DESKTOP (> 992px) | TABLET (768px-992px) | MOBILE (< 768px) |
+| :--- | :--- | :--- |
+| **Menu Completo** | **Menu Compacto** | **Menu Hambúrguer** |
+| **Grid 4 Colunas** | **Grid 2 Colunas** | **Coluna Única** |
+| **Hero Imersivo** | **Hero Ajustado** | **Hero Vertical** |
 
 ---
 
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
 <p align="center">
-  Feito com ❤️ por Trae AI
+  Feito com 🍰 e ❤️ por <strong>Trae AI</strong>
 </p>
