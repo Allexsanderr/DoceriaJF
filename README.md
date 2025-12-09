@@ -107,3 +107,16 @@
     <img src="https://img.shields.io/badge/GitHub-Allexsanderr-181717?style=social&logo=github" alt="Github" />
   </a>
 </div>
+
+---
+
+### Atualizações de 09/12/2025
+
+- Troca da chave de usuários para `cadastrados` (fallback para `usuariosCadastrados`).
+- Mensagens de erro no próprio modal de login (vermelho), sem `alert`.
+- Botão de cadastro atualizado para “Me registrar”.
+- Redirecionamento para `admin.html` após login válido.
+
+Arquivos tocados: `index.html`, `styles.css`, `script.js`, `README.md`.
+
+LocalStorage: `cadastrados`, `users`, `currentUser`.

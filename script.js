@@ -1,11 +1,28 @@
+/*
+  Observações gerais do script:
+  - Este arquivo implementa toda a experiência da loja "Doce Sabor" no front-end.
+  - Principais módulos:
+    1) Navegação e Menu Mobile: controla o ícone do menu e sua abertura/fechamento.
+    2) Produtos Dinâmicos: renderiza os cards combinando uma lista padrão com o que o admin cadastrou via localStorage.
+    3) Carrinho + WhatsApp: adiciona/remova itens, calcula total e gera mensagem para checkout direto no WhatsApp.
+    4) Login e Fidelidade: autenticação simples via localStorage e acúmulo de pontos (1 ponto a cada R$10).
+    5) Utilitários: toast (notificação discreta) e efeitos de aparecer ao rolar (scroll reveal).
+  - Decisões técnicas:
+    * Persistência local usando localStorage para não exigir backend.
+    * Estrutura em funções pequenas para facilitar manutenção.
+    * Sem dependências externas além de FontAwesome e Google Fonts.
+*/
+
 document.addEventListener('DOMContentLoaded', () => {
-  /* ==========================================================================
+  /* ===========================================================================
      1. Navegação e Menu Mobile
      ========================================================================== */
+  // Referências do menu e dos links do cabeçalho
   const toggle = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-menu a');
 
+  // Alterna a visibilidade do menu mobile e troca o ícone (hambúrguer <-> X)
   if (toggle) {
     toggle.addEventListener('click', () => {
       menu.classList.toggle('active');
@@ -18,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Fecha o menu ao clicar em qualquer link de navegação (boa UX em mobile)
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.remove('active');
@@ -27,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Header Sombra ao Rolar
+  // Adiciona uma leve sombra quando o usuário rola a página, para destacar o cabeçalho
   const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -37,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ==========================================================================
+  /* ===========================================================================
      2. Gerenciamento de Produtos (Dinâmico)
      ========================================================================== */
-  // Produtos padrão
+  // Produtos padrão (mostrados sempre) – complementados pelos cadastrados no admin (localStorage)
   const defaultProducts = [
     {
       name: "Bolo Trufado Real",
@@ -74,12 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   // Carregar produtos (localStorage + Default)
+  // Lê do localStorage (chave 'products'); combina com os da lista acima e envia para o renderer
   function loadProducts() {
     const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
     const allProducts = [...defaultProducts, ...storedProducts];
     renderProducts(allProducts);
   }
 
+  // Renderiza dinamicamente os cards de produtos no grid da página
   function renderProducts(products) {
     const grid = document.querySelector('.products-grid');
     if (!grid) return;
@@ -114,16 +135,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Re-atribuir eventos aos botões
+    // Após inserir os cards, conectamos de novo os handlers dos botões de carrinho
     attachCartEvents();
     
     // Re-aplicar animação de scroll nos novos elementos
+    // Garante que os novos cards também recebam o efeito "aparecer ao rolar"
     observeNewElements();
   }
 
   // Inicializar produtos
+  // Ao carregar a página, mostra os produtos imediatamente
   loadProducts();
 
   // Filtro de Categorias
+  // Botões de filtro: exibem apenas os produtos de determinada categoria, com leve animação
   const menuTabs = document.querySelectorAll('.menu-tab');
   menuTabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -147,9 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ==========================================================================
+  /* ===========================================================================
      3. Carrinho e WhatsApp
      ========================================================================== */
+  // Estado do carrinho e referências ao modal e elementos de UI relacionados
   let cart = [];
   const cartModal = document.getElementById('cart-modal');
   const cartBtnNav = document.getElementById('btn-cart-nav');
@@ -157,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartItemsContainer = document.getElementById('cart-items');
   const cartTotalEl = document.getElementById('cart-total');
 
+  // Conecta eventos de "Adicionar ao carrinho" para cada produto renderizado
   function attachCartEvents() {
     document.querySelectorAll('.btn-cart').forEach(btn => {
       btn.addEventListener('click', function() {
@@ -171,16 +198,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Empilha item no carrinho e atualiza a interface
   function addToCart(item) {
     cart.push(item);
     updateCartUI();
   }
 
+  // Remove item pelo índice (usado no botão lixeira)
   function removeFromCart(index) {
     cart.splice(index, 1);
     updateCartUI();
   }
 
+  // Atualiza os elementos visuais do carrinho (contador, lista e total)
   function updateCartUI() {
     // Atualizar contador
     if (cartCount) cartCount.innerText = cart.length;
@@ -194,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let total = 0;
       cart.forEach((item, index) => {
         // Limpar string de preço para somar
+        // Normaliza preço (ex.: remove "R$", converte vírgula para ponto)
         const priceNum = parseFloat(item.price.replace('R$', '').replace(',', '.').replace('/kg', '').replace('/un', '').trim());
         total += priceNum;
 
@@ -214,9 +245,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Tornar global para acesso no onclick inline
+  // Expondo função para ser usada diretamente no HTML gerado (botão da lixeira)
   window.removeCartItem = removeFromCart;
 
   // Abrir/Fechar Modal Carrinho
+  // Mostra o modal do carrinho ao clicar no ícone; fecha nos botões de fechar
   if (cartBtnNav) cartBtnNav.addEventListener('click', () => cartModal.classList.add('active'));
   document.querySelectorAll('.close-modal').forEach(btn => {
     btn.addEventListener('click', function() {
@@ -225,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Fechar ao clicar fora
+  // Se o usuário clicar na área escura do modal, ele é fechado
   window.addEventListener('click', (e) => {
     if (e.target.classList.contains('modal')) {
       e.target.classList.remove('active');
@@ -232,29 +266,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Finalizar no WhatsApp
+  // Monta mensagem com itens e total; se logado, adiciona nome e pontos ganhos; abre no WhatsApp da loja
   const btnCheckout = document.getElementById('btn-checkout');
   if (btnCheckout) {
     btnCheckout.addEventListener('click', () => {
       if (cart.length === 0) return alert('Seu carrinho está vazio!');
       
-      let msg = `Olá! Gostaria de fazer um pedido na Doce Sabor:\\n\\n`;
+      let msg = `Olá! Gostaria de fazer um pedido na Doce Sabor:\n\n`;
       let total = 0;
       
       cart.forEach(item => {
-        msg += `▪️ ${item.name} - R$ ${item.price}\\n`;
+        msg += `▪️ ${item.name} - R$ ${item.price}\n`;
         const priceNum = parseFloat(item.price.replace('R$', '').replace(',', '.').replace('/kg', '').replace('/un', '').trim());
         total += priceNum;
       });
       
-      msg += `\\n💰 *Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
+      msg += `\n💰 *Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
       
       if (currentUser) {
-        msg += `\\n\\n👤 *Cliente:* ${currentUser.name}`;
+        msg += `\n\n👤 *Cliente:* ${currentUser.name}`;
         
         // Adicionar pontos de fidelidade (1 pt a cada 10 reais)
         const pointsEarned = Math.floor(total / 10);
         addLoyaltyPoints(pointsEarned);
-        msg += `\\n💎 Pontos ganhos nesta compra: ${pointsEarned}`;
+        msg += `\n💎 Pontos ganhos nesta compra: ${pointsEarned}`;
       }
       
       const url = `https://wa.me/5532999999999?text=${encodeURIComponent(msg)}`;
@@ -268,14 +303,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ==========================================================================
+  /* ===========================================================================
      4. Sistema de Login e Fidelidade
      ========================================================================== */
+  // Estado do usuário e referências de UI para autenticação
   let currentUser = null;
   const authModal = document.getElementById('auth-modal');
   const btnLogin = document.getElementById('btn-login');
+  // Lista de usuários cadastrados (persistida em localStorage)
+  function getCadastrados() {
+    const novo = JSON.parse(localStorage.getItem('cadastrados'));
+    if (novo && Array.isArray(novo)) return novo;
+    const antigo = JSON.parse(localStorage.getItem('usuariosCadastrados'));
+    return antigo || [];
+  }
+  function setCadastrados(arr) {
+    localStorage.setItem('cadastrados', JSON.stringify(arr));
+  }
   
   // Tabs Login/Cadastro
+  // Alterna entre as abas de login e cadastro dentro do modal
   document.querySelectorAll('.auth-tab').forEach(tab => {
     tab.addEventListener('click', function() {
       document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
@@ -286,6 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Clique no ícone de usuário: abre modal se não estiver logado; se estiver, oferece logout
   if (btnLogin) {
     btnLogin.addEventListener('click', () => {
       if (currentUser) {
@@ -300,26 +348,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Login Logic
+  // Valida e autentica o usuário usando dados armazenados em localStorage ('users')
   const loginForm = document.getElementById('login-form');
+  const loginEmailInput = document.getElementById('login-email');
+  const loginPassInput = document.getElementById('login-pass');
+  const loginErrorElInit = document.getElementById('login-error');
+  [loginEmailInput, loginPassInput].forEach(i => i && i.addEventListener('input', () => {
+    if (loginErrorElInit) loginErrorElInit.classList.add('hidden');
+  }));
   if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = document.getElementById('login-email').value;
       const pass = document.getElementById('login-pass').value;
+      const errorEl = document.getElementById('login-error');
+      if (errorEl) { errorEl.textContent = ''; errorEl.classList.add('hidden'); }
       
-      const users = JSON.parse(localStorage.getItem('users')) || [];
-      const user = users.find(u => u.email === email && u.pass === pass);
-      
-      if (user) {
-        login(user);
-        authModal.classList.remove('active');
-      } else {
-        alert('E-mail ou senha inválidos!');
-      }
+      if (!email) { if (errorEl) { errorEl.textContent = 'Informe seu e-mail.'; errorEl.classList.remove('hidden'); } return; }
+      if (!pass) { if (errorEl) { errorEl.textContent = 'Informe sua senha.'; errorEl.classList.remove('hidden'); } return; }
+      const cadastrados = getCadastrados();
+      const fallbackUsers = JSON.parse(localStorage.getItem('users')) || [];
+      const userPrimary = cadastrados.find(u => (u.email === email || u.login === email));
+      const userFallback = userPrimary ? null : fallbackUsers.find(u => u.email === email);
+      const user = userPrimary || userFallback;
+      if (!user) { if (errorEl) { errorEl.textContent = 'Usuário não encontrado.'; errorEl.classList.remove('hidden'); } return; }
+      if (user.pass !== pass) { if (errorEl) { errorEl.textContent = 'Senha incorreta.'; errorEl.classList.remove('hidden'); } return; }
+      login(user);
+      authModal.classList.remove('active');
+      window.location.href = 'admin.html';
     });
   }
 
   // Register Logic
+  // Cadastra novo usuário, garantindo que o e-mail não esteja em uso
   const regForm = document.getElementById('register-form');
   if (regForm) {
     regForm.addEventListener('submit', (e) => {
@@ -328,14 +389,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('reg-email').value;
       const pass = document.getElementById('reg-pass').value;
       
+      // Lista de usuários principal
+      let cadastrados = getCadastrados();
       const users = JSON.parse(localStorage.getItem('users')) || [];
       
-      if (users.find(u => u.email === email)) {
+      if (cadastrados.find(u => u.email === email) || users.find(u => u.email === email)) {
         alert('E-mail já cadastrado!');
         return;
       }
       
-      const newUser = { name, email, pass, points: 0 };
+      const newUser = { name, email, pass, points: 0, createdAt: Date.now() };
+      // Atualiza ambas as chaves para compatibilidade
+      cadastrados.push(newUser);
+      setCadastrados(cadastrados);
       users.push(newUser);
       localStorage.setItem('users', JSON.stringify(users));
       
@@ -345,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Salva estado do login, atualiza UI e dá boas-vindas
   function login(user) {
     currentUser = user;
     localStorage.setItem('currentUser', JSON.stringify(user));
@@ -352,6 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast(`Bem-vindo, ${user.name}!`);
   }
 
+  // Apaga estado do login, atualiza UI e notifica usuário
   function logout() {
     currentUser = null;
     localStorage.removeItem('currentUser');
@@ -359,6 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast('Você saiu da conta.');
   }
 
+  // Reflete o estado do usuário logado no ícone do cabeçalho e exibe pontos
   function updateUserUI() {
     if (!btnLogin) return;
     
@@ -376,6 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Soma pontos de fidelidade, persiste em localStorage e atualiza UI
   function addLoyaltyPoints(points) {
     if (!currentUser) return;
     
@@ -395,6 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Check logged in user on load
+  // Ao iniciar, tenta restaurar o usuário logado a partir do localStorage
   const savedUser = localStorage.getItem('currentUser');
   if (savedUser) {
     currentUser = JSON.parse(savedUser);
@@ -402,9 +473,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ==========================================================================
+  /* ===========================================================================
      5. Utilitários (Toast, Reveal)
      ========================================================================== */
+  // Mostra uma notificação simples e temporária na base da tela
   function showToast(msg) {
     const toast = document.getElementById('toast');
     if (toast) {
@@ -415,6 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Scroll Reveal
+  // Observa elementos e adiciona classe "visible" quando entram no viewport (efeito de aparecer)
   function observeNewElements() {
     const revealElements = document.querySelectorAll('.product-card:not(.reveal)');
     const revealObserver = new IntersectionObserver((entries) => {
@@ -433,6 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Initial Observer for static elements
+  // Aplica o mesmo efeito de "aparecer" nos blocos estáticos (títulos, galeria, etc.)
   const staticRevealElements = document.querySelectorAll('.section h2, .feature-item, .about-img, .about-text, .gallery-item, .testimonial-card, .contact-wrapper');
   const staticObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -449,5 +523,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   // Call initially for products
+  // Garante que o efeito também está ativo para os cards de produtos renderizados inicialmente
   observeNewElements();
 });

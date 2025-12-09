@@ -754,6 +754,8 @@ img {
 .auth-form input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ffe4e1; border-radius: 8px; }
 .full-width { width: 100%; }
 .small-text { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+.form-error { color: #e53935; font-size: 0.9rem; margin-top: 6px; min-height: 1em; }
+.hidden { display: none; }
 
 /* Cart Modal Styles */
 .cart-content { padding: 30px; }
