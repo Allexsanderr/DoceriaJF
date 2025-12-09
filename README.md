@@ -9,10 +9,20 @@
 </p>
 
 <p align="center">
-  <a href="#-screenshots">📸 Screenshots</a> • 
-  <a href="#-videos">🎬 Videos</a> • 
+  <a href="#-sobre">� Sobre</a> • 
+  <a href="#-funcionalidades">⚙️ Funcionalidades</a> • 
+  <a href="#-vídeos">🎬 Vídeos</a> • 
+  <a href="#-tecnologias">🛠 Tecnologias</a> • 
+  <a href="#-como-executar">🚀 Como executar</a> • 
+  <a href="#-estrutura-do-projeto">📁 Estrutura</a> • 
   <a href="#-suporte">💬 Suporte</a>
 </p>
+
+---
+
+## 💻 Sobre
+
+Uma vitrine digital para a confeitaria artesanal Doceria Doce Sabor, com design moderno, transições suaves e interações simples para apresentar produtos e facilitar a navegação.
 
 ---
 
@@ -31,19 +41,9 @@
 
 ---
 
-## 📸 Screenshots
+ 
 
-<p align="center">
-  <img src="screenshots/Captura%20de%20tela%202025-12-08%20204037.png" alt="Screenshot 204037" width="48%" />
-  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205200.png" alt="Screenshot 205200" width="48%" />
-</p>
-
-<p align="center">
-  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205215.png" alt="Screenshot 205215" width="48%" />
-  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205246.png" alt="Screenshot 205246" width="48%" />
-</p>
-
-## 🎬 Videos
+## 🎬 Vídeos
 
 <p align="center">
   <img src="videos/video1.gif" alt="Prévia 1" width="48%" />
@@ -52,7 +52,7 @@
 
 ---
 
-## 🚀 Features Principais
+## ⚙️ Funcionalidades
 
 ### 🛍️ Menu e Produtos
 - **Filtro Inteligente**: Navegue entre Bolos, Doces e Tortas sem recarregar a página.
@@ -90,6 +90,33 @@
 
 ---
 
+## 🛠 Tecnologias
+
+- HTML5 sem dependências externas
+- CSS3 com animações e responsividade
+- JavaScript para interações (menu, filtros, animações)
+- Google Fonts (`Dancing Script`, `Lato`)
+
+---
+
+## 🚀 Como executar
+
+### 1. Clone e acesse
+```
+git clone https://github.com/Allexsanderr/DoceriaJF.git
+cd DoceriaJF
+```
+
+### 2. Execute
+- Abra `index.html` diretamente no navegador
+- Ou sirva localmente:
+```
+python -m http.server 8000
+# acesse: http://localhost:8000
+```
+
+---
+
  
 
 ## 🎨 Customização
@@ -121,3 +148,8 @@
 | **Hero Imersivo** | **Hero Ajustado** | **Hero Vertical** |
 
 ---
+
+## 💬 Suporte
+
+- Abra uma issue neste repositório com detalhes do problema ou sugestão.
+- Alternativamente, envie um link de vídeo/GIF mostrando o comportamento.
