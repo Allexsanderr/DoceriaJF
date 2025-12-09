@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel Administrativo | Doce Sabor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #f9f9f9; padding-top: 80px; }
+    .admin-container { max-width: 800px; margin: 40px auto; padding: 20px; }
+    .admin-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
+    .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .product-list-item { display: flex; align-items: center; justify-content: space-between; padding: 15px; border-bottom: 1px solid #eee; }
+    .product-list-item:last-child { border-bottom: none; }
+    .product-thumb { width: 60px; height: 60px; object-fit: cover; border-radius: 8px; margin-right: 15px; }
+    .item-info { flex: 1; }
+    .item-actions button { background: none; border: none; cursor: pointer; color: #dc3545; transition: 0.3s; }
+    .item-actions button:hover { transform: scale(1.1); }
+    .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary-color); font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Doce Sabor <span style="font-size: 0.6em; color: #555;">Admin</span></a>
+      <a href="index.html" class="btn btn-outline" style="color: var(--primary-color); border-color: var(--primary-color);">Voltar ao Site</a>
+    </div>
+  </header>
+
+  <div class="admin-container">
+    <div class="admin-header">
+      <h2>Gerenciar Produtos</h2>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="admin-card">
+      <h3>Adicionar Novo Produto</h3>
+      <form id="add-product-form">
+        <div class="form-group">
+          <label>Nome do Produto</label>
+          <input type="text" id="prod-name" required placeholder="Ex: Bolo de Cenoura">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preço (R$)</label>
+            <input type="text" id="prod-price" required placeholder="0,00">
+          </div>
+          <div class="form-group">
+            <label>Categoria</label>
+            <select id="prod-cat" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+              <option value="bolos">Bolos</option>
+              <option value="doces">Doces Finos</option>
+              <option value="tortas">Tortas</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>URL da Imagem</label>
+          <input type="url" id="prod-img" required placeholder="https://...">
+          <small style="color: #888;">Use uma URL de imagem válida.</small>
+        </div>
+        <div class="form-group">
+          <label>Descrição</label>
+          <textarea id="prod-desc" rows="3" required placeholder="Detalhes do produto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Salvar Produto</button>
+      </form>
+    </div>
+
+    <!-- Lista de Produtos -->
+    <div class="admin-card">
+      <h3>Produtos Cadastrados</h3>
+      <div id="admin-product-list">
+        <!-- Lista renderizada via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('add-product-form');
+      const listContainer = document.getElementById('admin-product-list');
+
+      // Carregar produtos
+      function loadAdminProducts() {
+        const products = JSON.parse(localStorage.getItem('products')) || [];
+        listContainer.innerHTML = '';
+
+        if (products.length === 0) {
+          listContainer.innerHTML = '<p style="text-align:center; color:#888;">Nenhum produto cadastrado manualmente.</p>';
+          return;
+        }
+
+        products.forEach((prod, index) => {
+          const div = document.createElement('div');
+          div.className = 'product-list-item';
+          div.innerHTML = `
+            <img src="${prod.image}" class="product-thumb" alt="${prod.name}">
+            <div class="item-info">
+              <strong>${prod.name}</strong>
+              <div style="font-size: 0.9em; color: #666;">${prod.category} | R$ ${prod.price}</div>
+            </div>
+            <div class="item-actions">
+              <button onclick="deleteProduct(${index})" title="Excluir"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+          listContainer.appendChild(div);
+        });
+      }
+
+      // Adicionar Produto
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const newProduct = {
+          name: document.getElementById('prod-name').value,
+          price: document.getElementById('prod-price').value,
+          category: document.getElementById('prod-cat').value,
+          image: document.getElementById('prod-img').value,
+          desc: document.getElementById('prod-desc').value,
+          badge: "Novo" // Opcional
+        };
+
+        const products = JSON.parse(localStorage.getItem('products')) || [];
+        products.push(newProduct);
+        localStorage.setItem('products', JSON.stringify(products));
+
+        alert('Produto cadastrado com sucesso!');
+        form.reset();
+        loadAdminProducts();
+      });
+
+      // Excluir Produto
+      window.deleteProduct = (index) => {
+        if(confirm('Tem certeza que deseja excluir este produto?')) {
+          const products = JSON.parse(localStorage.getItem('products')) || [];
+          products.splice(index, 1);
+          localStorage.setItem('products', JSON.stringify(products));
+          loadAdminProducts();
+        }
+      };
+
+      loadAdminProducts();
+    });
+  </script>
+</body>
+</html>

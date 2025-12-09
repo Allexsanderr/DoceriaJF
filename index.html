@@ -16,7 +16,16 @@
   <header class="header">
     <div class="container nav">
       <a href="#home" class="brand">Doce Sabor <i class="fa-solid fa-cake-candles"></i></a>
-      <button class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      
+      <div class="nav-controls">
+        <button id="btn-login" class="nav-icon" aria-label="Login"><i class="fa-regular fa-user"></i></button>
+        <button id="btn-cart-nav" class="nav-icon" aria-label="Carrinho">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
       <nav class="nav-menu">
         <a href="#destaques">Menu</a>
         <a href="#sobre">Sobre</a>
@@ -76,66 +85,7 @@
       </div>
 
       <div class="products-grid">
-        <!-- Produto 1 -->
-        <div class="product-card" data-category="bolos">
-          <div class="product-img">
-            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Close+up+shot+of+a+decadent+rich+chocolate+cake+with+ganache+and+berries%2C+professional+food+photography%2C+appetizing&image_size=square" alt="Bolo de Chocolate">
-            <span class="badge">Mais Vendido</span>
-          </div>
-          <div class="product-info">
-            <h3>Bolo Trufado Real</h3>
-            <p class="desc">Massa úmida de cacau 100%, recheio de ganache meio amargo e frutas vermelhas.</p>
-            <div class="price-row">
-              <span class="price">R$ 120,00/kg</span>
-              <button class="btn-cart" aria-label="Adicionar"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 2 -->
-        <div class="product-card" data-category="tortas">
-          <div class="product-img">
-            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Gourmet+strawberry+tart+with+custard+cream%2C+fresh+strawberries%2C+mint+leaf%2C+elegant+presentation%2C+food+photography&image_size=square" alt="Torta de Morango">
-          </div>
-          <div class="product-info">
-            <h3>Torta de Morango</h3>
-            <p class="desc">Base crocante de amêndoas, creme patissière aveludado e morangos frescos.</p>
-            <div class="price-row">
-              <span class="price">R$ 85,00</span>
-              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 3 -->
-        <div class="product-card" data-category="doces">
-          <div class="product-img">
-            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Brazilian+gourmet+brigadeiros+chocolate+truffles+with+sprinkles%2C+arranged+on+a+golden+tray%2C+high+quality&image_size=square" alt="Brigadeiros Gourmet">
-          </div>
-          <div class="product-info">
-            <h3>Caixa Degustação</h3>
-            <p class="desc">Seleção com 12 brigadeiros gourmet variados: Belga, Ninho, Churros e Pistache.</p>
-            <div class="price-row">
-              <span class="price">R$ 45,00</span>
-              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Produto 4 -->
-        <div class="product-card" data-category="bolos">
-          <div class="product-img">
-            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Elegant+vanilla+cupcake+with+pink+buttercream+frosting+and+edible+gold+dust%2C+soft+lighting&image_size=square" alt="Cupcakes">
-          </div>
-          <div class="product-info">
-            <h3>Cupcakes Especiais</h3>
-            <p class="desc">Massa fofinha de baunilha com cobertura de buttercream suíço e decoração em ouro.</p>
-            <div class="price-row">
-              <span class="price">R$ 15,00/un</span>
-              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
-          </div>
-        </div>
+        <!-- Os produtos serão carregados via JavaScript -->
       </div>
     </div>
   </section>
@@ -289,6 +239,55 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modais -->
+  <!-- 1. Login/Cadastro -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content auth-content">
+      <span class="close-modal">&times;</span>
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-target="login-form">Login</button>
+        <button class="auth-tab" data-target="register-form">Cadastro</button>
+      </div>
+      
+      <form id="login-form" class="auth-form active">
+        <h3>Bem-vindo de volta! 🍰</h3>
+        <input type="email" id="login-email" placeholder="Seu E-mail" required>
+        <input type="password" id="login-pass" placeholder="Sua Senha" required>
+        <button type="submit" class="btn btn-primary full-width">Entrar</button>
+      </form>
+
+      <form id="register-form" class="auth-form">
+        <h3>Junte-se ao nosso clube! 💎</h3>
+        <p class="small-text">Ganhe pontos a cada pedido!</p>
+        <input type="text" id="reg-name" placeholder="Seu Nome Completo" required>
+        <input type="email" id="reg-email" placeholder="Seu E-mail" required>
+        <input type="password" id="reg-pass" placeholder="Crie uma Senha" required>
+        <button type="submit" class="btn btn-primary full-width">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Carrinho -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content cart-content">
+      <span class="close-modal">&times;</span>
+      <h3>Seu Carrinho 🛒</h3>
+      <div id="cart-items" class="cart-items-container">
+        <p class="empty-msg">Seu carrinho está vazio.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total:</span>
+          <span id="cart-total">R$ 0,00</span>
+        </div>
+        <button id="btn-checkout" class="btn btn-primary full-width"><i class="fa-brands fa-whatsapp"></i> Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Produto adicionado! 🍰</div>
 
 <script src="script.js"></script>
 </body>
