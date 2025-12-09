@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#-screenshots">📸 Screenshots</a> • 
-  <a href="#-quick-start">🚀 Quick Start</a> • 
+  <a href="#-videos">🎬 Videos</a> • 
   <a href="#-suporte">💬 Suporte</a>
 </p>
 
@@ -34,13 +34,20 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Close+up+shot+of+a+decadent+rich+chocolate+cake+with+ganache+and+berries%2C+professional+food+photography%2C+appetizing&image_size=landscape_16_9" alt="Destaque Bolo" width="48%" />
-  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Gourmet+strawberry+tart+with+custard+cream%2C+fresh+strawberries%2C+mint+leaf%2C+elegant+presentation%2C+food+photography&image_size=landscape_16_9" alt="Destaque Torta" width="48%" />
+  <img src="screenshots/Captura%20de%20tela%202025-12-08%20204037.png" alt="Screenshot 204037" width="48%" />
+  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205200.png" alt="Screenshot 205200" width="48%" />
 </p>
 
 <p align="center">
-  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Box+of+colorful+gourmet+donuts+with+various+toppings%2C+top+down+view%2C+bright+and+cheerful&image_size=landscape_16_9" alt="Galeria Donuts" width="48%" />
-  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Tower+of+colorful+french+macarons+pastel+colors+soft+lighting&image_size=landscape_16_9" alt="Galeria Macarons" width="48%" />
+  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205215.png" alt="Screenshot 205215" width="48%" />
+  <img src="screenshots/Captura%20de%20tela%202025-12-08%20205246.png" alt="Screenshot 205246" width="48%" />
+</p>
+
+## 🎬 Videos
+
+<p align="center">
+  <video src="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20204008.mp4" controls width="48%"></video>
+  <video src="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20205340.mp4" controls width="48%"></video>
 </p>
 
 ---
@@ -83,29 +90,7 @@
 
 ---
 
-## ⚡ Quick Start
-
-### 1️⃣ Clone o repositório
-```bash
-git clone https://github.com/Allexsanderr/DoceriaJF.git
-cd DoceriaJF
-```
-
-### 2️⃣ Abra no navegador
-
-**Opção 1: Abrir diretamente**
-Basta dar dois cliques no arquivo `index.html`.
-
-**Opção 2: Servidor local (recomendado)**
-```bash
-python -m http.server 8000
-# Acesse: http://localhost:8000
-```
-
-### 3️⃣ Aproveite! 🎉
-Navegue pelo cardápio e encante-se com as delícias.
-
----
+ 
 
 ## 🎨 Customização
 
@@ -137,6 +122,3 @@ Navegue pelo cardápio e encante-se com as delícias.
 
 ---
 
-<p align="center">
-  Feito com 🍰 e ❤️ por <strong>Trae AI</strong>
-</p>
