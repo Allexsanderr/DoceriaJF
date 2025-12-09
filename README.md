@@ -120,3 +120,91 @@
 Arquivos tocados: `index.html`, `styles.css`, `script.js`, `README.md`.
 
 LocalStorage: `cadastrados`, `users`, `currentUser`.
+
+---
+
+## Visão Geral
+- E-commerce de confeitaria com vitrine dinâmica, carrinho e checkout via WhatsApp.
+- Painel administrativo local (`admin.html`) para cadastrar produtos em `localStorage`.
+- Autenticação simples com persistência local e pontos de fidelidade.
+
+## Funcionalidades
+- Produtos dinâmicos com filtros e animações.
+- Carrinho com soma automática e integração WhatsApp.
+- Login/Cadastro com validações e mensagens de erro no modal.
+- Fidelidade: 1 ponto a cada R$10 consumidos.
+- Admin: cadastro e listagem de produtos em tempo real.
+
+## Capturas de Tela (Mini)
+<div align="center">
+  <img src="videos/video1.gif" alt="Vitrine e navegação" width="280" />
+  <img src="videos/video2.gif" alt="Carrinho e checkout" width="280" />
+</div>
+
+<div align="center">
+  <!-- Placeholders visuais (mini) -->
+  <img src="https://placehold.co/280x160/fff0f5/5d4037?text=Login+Modal" alt="Login Modal" width="280" />
+  <img src="https://placehold.co/280x160/fff0f5/5d4037?text=Admin+Produtos" alt="Admin Produtos" width="280" />
+</div>
+
+> Observação: os GIFs demonstram a interação; os placeholders indicam as áreas principais (login/admin) quando a captura não estiver disponível.
+
+## Autenticação
+- Cadastro salva na chave `cadastrados` e também atualiza `users` (compatibilidade).
+- Login procura primeiro em `cadastrados` e faz fallback para `users`.
+- Mensagens de erro no modal: e-mail vazio, senha vazia, usuário não encontrado, senha incorreta.
+- Após login válido, redireciona para `admin.html` e persiste `currentUser`.
+
+## Chaves de Armazenamento
+- `cadastrados`: lista de usuários cadastrados (novo padrão).
+- `usuariosCadastrados`: fallback de leitura para compatibilidade.
+- `users`: lista de usuários usada por recursos legados e fidelidade.
+- `currentUser`: usuário logado atual.
+- `products`: produtos cadastrados via admin.
+
+## Como Usar
+- Clone: `git clone https://github.com/Allexsanderr/DoceriaJF.git`
+- Abra `index.html` em qualquer navegador moderno.
+- Opcional: use um servidor local (ex.: Live Server) para melhor experiência.
+
+## Fluxo de Admin
+- Abra `admin.html` para cadastrar produtos.
+- Produtos são salvos em `localStorage` na chave `products` e aparecem na vitrine.
+
+### Screenshots reais (mini)
+<div align="center">
+  <img src="screenshots/Captura de tela 2025-12-09 203722.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203757.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203810.png" width="220" />
+</div>
+<div align="center">
+  <img src="screenshots/Captura de tela 2025-12-09 203819.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203924.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203951.png" width="220" />
+</div>
+
+## Checkout via WhatsApp
+- Botão “Finalizar Pedido” monta mensagem com itens e total.
+- Abre conversa com a doceria via `https://wa.me/` com texto pronto.
+
+## Pontos de Fidelidade
+- Cálculo: `Math.floor(total / 10)` por compra.
+- Persistência em `users` e reflexo imediato no header.
+
+## Stack
+- `HTML`, `CSS`, `JavaScript` (sem backend).
+- `LocalStorage` para persistência.
+- `Font Awesome` e `Google Fonts` para UI.
+
+## Estrutura
+- `index.html` – vitrine e modais.
+- `admin.html` – cadastro e gestão de produtos.
+- `script.js` – lógica de produtos, carrinho, login, fidelidade.
+- `styles.css` – estilos e responsividade.
+- `videos/` – demonstrações em GIF.
+
+## Limitações e Próximos Passos
+- Sem backend; dados persistem no navegador do usuário.
+- Sugestões: campos dedicados de login, export/import de dados, relatórios no admin.
