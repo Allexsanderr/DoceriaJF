@@ -27,13 +27,17 @@
     <tr>
       <td align="center" width="50%">
         <img src="videos/video1.gif" alt="Vitrine animada 1" width="100%" style="border-radius: 12px; border: 4px solid #ff69b4; box-shadow: 0 0 18px rgba(255, 105, 180, 0.35);" />
-        <br>
-        <img src="https://img.shields.io/badge/Vitrine_Animada-ff69b4?style=flat-square&color=ff69b4" />
       </td>
       <td align="center" width="50%">
+        <img src="screenshots/Captura de tela 2025-12-09 203742.png" alt="Vitrine e navegação" width="100%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 18px rgba(255, 20, 147, 0.30);" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
         <img src="videos/video2.gif" alt="Vitrine animada 2" width="100%" style="border-radius: 12px; border: 4px solid #5d4037; box-shadow: 0 0 18px rgba(93, 64, 55, 0.35);" />
-        <br>
-        <img src="https://img.shields.io/badge/Experi%C3%AAncia_Suave-5d4037?style=flat-square&color=5d4037" />
+      </td>
+      <td align="center" width="50%">
+        <img src="screenshots/Captura de tela 2025-12-09 203849.png" alt="Carrinho e checkout" width="100%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 18px rgba(255, 105, 180, 0.30);" />
       </td>
     </tr>
   </table>
