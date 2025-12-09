@@ -46,9 +46,16 @@
 ## 🎬 Videos
 
 <p align="center">
-  <video src="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20204008.mp4" controls width="48%"></video>
-  <video src="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20205340.mp4" controls width="48%"></video>
+  <a href="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20204008.mp4">
+    <img src="screenshots/Captura%20de%20tela%202025-12-08%20204037.png" alt="Vídeo 1" width="48%" />
+  </a>
+  <a href="videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20205340.mp4">
+    <img src="screenshots/Captura%20de%20tela%202025-12-08%20205200.png" alt="Vídeo 2" width="48%" />
+  </a>
 </p>
+
+- [Prévia 1](videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20204008.mp4)
+- [Prévia 2](videos/Grava%C3%A7%C3%A3o%20de%20Tela%202025-12-08%20205340.mp4)
 
 ---
 
@@ -121,4 +128,3 @@
 | **Hero Imersivo** | **Hero Ajustado** | **Hero Vertical** |
 
 ---
-
