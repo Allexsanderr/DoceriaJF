@@ -39,12 +39,12 @@
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="videos/video1.gif" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
+        <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
         <br><br>
         <img src="https://img.shields.io/badge/✨_UX_Design-ff69b4?style=flat-square&color=ff69b4" />
       </td>
       <td align="center" width="50%">
-        <img src="videos/video2.gif" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
+        <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
         <br><br>
         <img src="https://img.shields.io/badge/🛒_Carrinho_Dinâmico-ff69b4?style=flat-square&color=5d4037" />
       </td>
@@ -137,8 +137,8 @@ LocalStorage: `cadastrados`, `users`, `currentUser`.
 
 ## Capturas de Tela (Mini)
 <div align="center">
-  <img src="videos/video1.gif" alt="Vitrine e navegação" width="280" />
-  <img src="videos/video2.gif" alt="Carrinho e checkout" width="280" />
+  <img src="screenshots/Captura de tela 2025-12-09 203722.png" alt="Vitrine e navegação" width="280" />
+  <img src="screenshots/Captura de tela 2025-12-09 203819.png" alt="Carrinho e checkout" width="280" />
 </div>
 
 <div align="center">
@@ -203,7 +203,6 @@ LocalStorage: `cadastrados`, `users`, `currentUser`.
 - `admin.html` – cadastro e gestão de produtos.
 - `script.js` – lógica de produtos, carrinho, login, fidelidade.
 - `styles.css` – estilos e responsividade.
-- `videos/` – demonstrações em GIF.
 
 ## Limitações e Próximos Passos
 - Sem backend; dados persistem no navegador do usuário.
