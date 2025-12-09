@@ -135,19 +135,14 @@ LocalStorage: `cadastrados`, `users`, `currentUser`.
 - Fidelidade: 1 ponto a cada R$10 consumidos.
 - Admin: cadastro e listagem de produtos em tempo real.
 
-## Capturas de Tela (Mini)
+## Destaques Animados
 <div align="center">
-  <img src="screenshots/Captura de tela 2025-12-09 203722.png" alt="Vitrine e navegação" width="280" />
-  <img src="screenshots/Captura de tela 2025-12-09 203819.png" alt="Carrinho e checkout" width="280" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Lato&weight=700&size=24&duration=2500&pause=800&color=FF69B4&center=true&vCenter=true&width=700&lines=Doces+que+encantam;+Experi%C3%AAncia+suave+e+responsiva;+Checkout+com+1+clique+no+WhatsApp" />
+  <br><br>
+  <img src="https://img.shields.io/badge/Deep%20Pink-ff1493?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hot%20Pink-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Brown-5d4037?style=for-the-badge&logoColor=white" />
 </div>
-
-<div align="center">
-  <!-- Placeholders visuais (mini) -->
-  <img src="https://placehold.co/280x160/fff0f5/5d4037?text=Login+Modal" alt="Login Modal" width="280" />
-  <img src="https://placehold.co/280x160/fff0f5/5d4037?text=Admin+Produtos" alt="Admin Produtos" width="280" />
-</div>
-
-> Observação: os GIFs demonstram a interação; os placeholders indicam as áreas principais (login/admin) quando a captura não estiver disponível.
 
 ## Autenticação
 - Cadastro salva na chave `cadastrados` e também atualiza `users` (compatibilidade).
@@ -171,18 +166,15 @@ LocalStorage: `cadastrados`, `users`, `currentUser`.
 - Abra `admin.html` para cadastrar produtos.
 - Produtos são salvos em `localStorage` na chave `products` e aparecem na vitrine.
 
-### Screenshots reais (mini)
+## Screenshots
 <div align="center">
-  <img src="screenshots/Captura de tela 2025-12-09 203722.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203757.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203810.png" width="220" />
-</div>
-<div align="center">
-  <img src="screenshots/Captura de tela 2025-12-09 203819.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203924.png" width="220" />
-  <img src="screenshots/Captura de tela 2025-12-09 203951.png" width="220" />
+  <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 20, 147, 0.35);" />
+  <br><br>
+  <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(93, 64, 55, 0.35);" />
+  <br><br>
+  <img src="screenshots/Captura de tela 2025-12-09 203722.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+  <br><br>
+  <img src="screenshots/Captura de tela 2025-12-09 203819.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
 </div>
 
 ## Checkout via WhatsApp
