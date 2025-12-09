@@ -1,155 +1,102 @@
-# 🍰 Doceria Doce Sabor
+<div align="center">
 
-<p align="center">
-  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" alt="Banner Doceria" width="100%">
-</p>
+  <!-- Typing SVG Header -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Dancing+Script&size=50&duration=3000&pause=1000&color=D63384&center=true&vCenter=true&width=600&lines=Doceria+Doce+Sabor;Sabor+que+encanta;Feito+com+amor;Design+Premium" alt="Typing SVG" />
 
-<p align="center">
-  Um website completo e elegante para uma confeitaria artesanal, com design premium e funcionalidades interativas.
-</p>
+  <!-- Banner -->
+  <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" alt="Banner" width="100%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(214, 51, 132, 0.3);">
 
-<p align="center">
-  <a href="#-sobre">� Sobre</a> • 
-  <a href="#-funcionalidades">⚙️ Funcionalidades</a> • 
-  <a href="#-vídeos">🎬 Vídeos</a> • 
-  <a href="#-tecnologias">🛠 Tecnologias</a> • 
-  <a href="#-como-executar">🚀 Como executar</a> • 
-  <a href="#-estrutura-do-projeto">📁 Estrutura</a> • 
-  <a href="#-suporte">💬 Suporte</a>
-</p>
+  <br><br>
 
----
+  <!-- Animated Badges with Project Colors -->
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&color=d63384" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&color=5d4037" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&color=ffc107" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Design-Premium-ff69b4?style=for-the-badge&logo=framer&logoColor=white&color=f8d7da&labelColor=d63384" alt="Design" />
 
-## 💻 Sobre
+  <br><br>
 
-Uma vitrine digital para a confeitaria artesanal Doceria Doce Sabor, com design moderno, transições suaves e interações simples para apresentar produtos e facilitar a navegação.
+  <p style="font-size: 1.2em; color: #5d4037;">
+    <i>Uma experiência digital imersiva para a confeitaria artesanal, onde o design encontra o sabor.</i>
+  </p>
+
+</div>
 
 ---
 
-## ✨ Destaques
+## 🎬 **Vitrine Digital**
 
-┌─────────────────────────────────────────────────────┐
-│   🍰 PLATAFORMA DE CONFEITARIA ARTESANAL           │
-│                                                     │
-│   ✅ Menu Interativo        ✅ Filtro por Categoria │
-│   ✅ Carrinho Simulado      ✅ Galeria do Instagram │
-│   ✅ Lembretes Inteligentes ✅ 100% Responsivo      │
-│   ✅ Scroll Reveal          ✅ Identidade Premium   │
-│   ✅ Design Moderno         ✅ Zero Dependências    │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-
----
-
- 
-
-## 🎬 Vídeos
-
-<p align="center">
-  <img src="videos/video1.gif" alt="Prévia 1" width="48%" />
-  <img src="videos/video2.gif" alt="Prévia 2" width="48%" />
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="videos/video1.gif" width="100%" style="border-radius: 10px;" />
+        <br>
+        <sub>✨ <b>Navegação Suave & Hero Section</b></sub>
+      </td>
+      <td align="center">
+        <img src="videos/video2.gif" width="100%" style="border-radius: 10px;" />
+        <br>
+        <sub>🍰 <b>Cardápio Interativo & Filtros</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-## ⚙️ Funcionalidades
+## � **Paleta de Cores**
 
-### 🛍️ Menu e Produtos
-- **Filtro Inteligente**: Navegue entre Bolos, Doces e Tortas sem recarregar a página.
-- **Carrinho Simulado**: Feedback visual (check ✅) e alerta ao adicionar itens.
-- **Cards Interativos**: Efeito de zoom e destaque ao passar o mouse.
-
-### 🎨 Design & UI
-- **Identidade Premium**: Cores Framboesa e Chocolate para despertar o apetite.
-- **Scroll Reveal**: Elementos surgem suavemente conforme você rola a página.
-- **Tipografia**: Combinação elegante de *Dancing Script* e *Lato*.
-
-### 📱 Responsividade 100%
-- **Desktop**: Layout amplo e imersivo.
-- **Mobile**: Menu hambúrguer funcional e elementos adaptados para toque.
-- **Tablet**: Ajuste automático de grids.
-
-### 🛡️ Robustez
-- **Fallback de Imagens**: Substituição automática por placeholders caso a imagem falhe.
-- **Performance**: Carregamento otimizado de fontes e scripts.
+<div align="center">
+  <img src="https://img.shields.io/badge/Primary-d63384?style=for-the-badge&color=d63384" />
+  <img src="https://img.shields.io/badge/Secondary-5d4037?style=for-the-badge&color=5d4037" />
+  <img src="https://img.shields.io/badge/Accent-ffc107?style=for-the-badge&color=ffc107" />
+  <img src="https://img.shields.io/badge/Light-f8d7da?style=for-the-badge&color=f8d7da&labelColor=5d4037" />
+</div>
 
 ---
 
-## 📁 Estrutura do Projeto
+## ✨ **Funcionalidades Premium**
+
+<table align="center">
+  <tr>
+    <td width="50%">
+      <h3>🛍️ Experiência de Compra</h3>
+      <ul>
+        <li><b>Carrinho Inteligente</b>: Adição instantânea com feedback visual.</li>
+        <li><b>Filtros Dinâmicos</b>: Transição suave entre categorias.</li>
+        <li><b>Cards Interativos</b>: Zoom e efeitos de hover elegantes.</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🎨 UI/UX Refinado</h3>
+      <ul>
+        <li><b>Scroll Reveal</b>: Elementos surgem conforme a navegação.</li>
+        <li><b>Responsivo</b>: Perfeito em celulares, tablets e desktops.</li>
+        <li><b>Tipografia</b>: <i>Dancing Script</i> para um toque artesanal.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🚀 **Como Executar**
 
 ```bash
-📦 DOCERIA.DOCESABOR
-├── 📄 index.html              ⭐ Página principal (vitrine)
-│
-├── 🎨 styles.css              → Estilos + animações + responsivo
-├── ⚙️  script.js               → Lógica de menu, filtros e animações
-│
-├── 📚 README.md               → Este arquivo
-└── 📝 .gitignore              → Configuração Git
-```
-
----
-
-## 🛠 Tecnologias
-
-- HTML5 sem dependências externas
-- CSS3 com animações e responsividade
-- JavaScript para interações (menu, filtros, animações)
-- Google Fonts (`Dancing Script`, `Lato`)
-
----
-
-## 🚀 Como executar
-
-### 1. Clone e acesse
-```
+# 1. Clone o repositório
 git clone https://github.com/Allexsanderr/DoceriaJF.git
+
+# 2. Entre na pasta
 cd DoceriaJF
-```
 
-### 2. Execute
-- Abra `index.html` diretamente no navegador
-- Ou sirva localmente:
-```
+# 3. Abra o arquivo index.html no seu navegador favorito!
+# Ou use um servidor local:
 python -m http.server 8000
-# acesse: http://localhost:8000
 ```
 
 ---
 
- 
-
-## 🎨 Customização
-
-### 🌈 Cores (em `styles.css`)
-```css
-:root {
-  --primary: #d63384;      /* 🍧 Rosa Framboesa */
-  --primary-light: #f8d7da;/* 🌸 Rosa Suave */
-  --secondary: #5d4037;    /* 🍫 Marrom Café */
-  --accent: #ffc107;       /* ✨ Dourado */
-  --bg-body: #fff9fa;      /* 🌫️ Fundo Pálido */
-}
-```
-
-### 🔤 Fontes
-```html
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-```
-
----
-
-## 📱 Responsividade em Ação
-
-| DESKTOP (> 992px) | TABLET (768px-992px) | MOBILE (< 768px) |
-| :--- | :--- | :--- |
-| **Menu Completo** | **Menu Compacto** | **Menu Hambúrguer** |
-| **Grid 4 Colunas** | **Grid 2 Colunas** | **Coluna Única** |
-| **Hero Imersivo** | **Hero Ajustado** | **Hero Vertical** |
-
----
-
-## 💬 Suporte
-
-- Abra uma issue neste repositório com detalhes do problema ou sugestão.
-- Alternativamente, envie um link de vídeo/GIF mostrando o comportamento.
+<div align="center">
+  <sub>Desenvolvido com � e muita 🍫 por <b>Allexsanderr</b></sub>
+</div>
