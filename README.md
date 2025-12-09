@@ -113,7 +113,7 @@
 
 ---
 
-## �🚀 **Como Executar**
+## � **Como Executar**
 
 ```bash
 # 1. Clone o repositório
@@ -129,6 +129,34 @@ python -m http.server 8000
 
 ---
 
+## 🗺️ **Roadmap do Projeto**
+
+- [x] **Fase 1**: Lançamento da Vitrine Digital (Frontend estático)
+- [x] **Fase 2**: Otimização de SEO e Performance
+- [ ] **Fase 3**: Integração com WhatsApp API para pedidos diretos
+- [ ] **Fase 4**: Painel Administrativo para cadastro de produtos
+- [ ] **Fase 5**: Sistema de Login e Fidelidade para clientes
+
+---
+
+## 🤝 **Como Contribuir**
+
+Quer fazer parte deste projeto delicioso? Siga os passos:
+
+1. Faça um **Fork** do projeto.
+2. Crie uma nova Branch: `git checkout -b feature/MinhaNovaFeature`.
+3. Faça suas alterações e commit: `git commit -m 'Adiciona: Nova Feature Incrível'`.
+4. Faça o Push: `git push origin feature/MinhaNovaFeature`.
+5. Abra um **Pull Request**.
+
+---
+
+## 📄 **Licença**
+
+Este projeto está sob a licença **MIT**. Sinta-se livre para usar, estudar e modificar!
+
+---
+
 <div align="center">
-  <sub>Desenvolvido com � e muita 🍫 por <b>Allexsanderr</b></sub>
+  <sub>Desenvolvido com 💖 e muita 🍫 por <b>Allexsanderr</b></sub>
 </div>
