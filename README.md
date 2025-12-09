@@ -22,6 +22,22 @@
   <!-- Hero Image with subtle shadow -->
   <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" width="100%" style="border-radius: 15px; box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);">
 
+  <br><br>
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="videos/video1.gif" alt="Vitrine animada 1" width="100%" style="border-radius: 12px; border: 4px solid #ff69b4; box-shadow: 0 0 18px rgba(255, 105, 180, 0.35);" />
+        <br>
+        <img src="https://img.shields.io/badge/Vitrine_Animada-ff69b4?style=flat-square&color=ff69b4" />
+      </td>
+      <td align="center" width="50%">
+        <img src="videos/video2.gif" alt="Vitrine animada 2" width="100%" style="border-radius: 12px; border: 4px solid #5d4037; box-shadow: 0 0 18px rgba(93, 64, 55, 0.35);" />
+        <br>
+        <img src="https://img.shields.io/badge/Experi%C3%AAncia_Suave-5d4037?style=flat-square&color=5d4037" />
+      </td>
+    </tr>
+  </table>
+
 </div>
 
 <br>
@@ -80,6 +96,8 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Lato&size=20&duration=2000&pause=500&color=FF1493&center=true&vCenter=true&width=150&lines=Deep+Pink;#ff1493" />
   <img src="https://readme-typing-svg.herokuapp.com?font=Lato&size=20&duration=2000&pause=500&color=5D4037&center=true&vCenter=true&width=150&lines=Brown;#5d4037" />
   <img src="https://readme-typing-svg.herokuapp.com?font=Lato&size=20&duration=2000&pause=500&color=FFC107&center=true&vCenter=true&width=150&lines=Gold;#ffc107" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Lato&size=20&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=150&lines=Hot+Pink;#ff69b4" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Lato&size=20&duration=2000&pause=500&color=FFF0F5&center=true&vCenter=true&width=180&lines=Lavender+Blush;#fff0f5" />
 </div>
 
 <br>
