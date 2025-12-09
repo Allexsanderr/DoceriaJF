@@ -81,7 +81,39 @@
 
 ---
 
-## 🚀 **Como Executar**
+## 🧗 **Desafios & Aprendizados**
+
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td width="33%" align="center">
+        <h3>�</h3>
+        <b>Responsividade Extrema</b>
+        <p align="justify">
+          Criar um layout que se adapta fluidamente de telas 4k até dispositivos móveis antigos foi o maior desafio. Ajustar os <i>grids</i> CSS e as fontes responsivas (<i>clamp</i>) exigiu diversos testes e refinamentos para garantir que a elegância não se perdesse em telas pequenas.
+        </p>
+      </td>
+      <td width="33%" align="center">
+        <h3>⚡</h3>
+        <b>Performance & Animações</b>
+        <p align="justify">
+          Implementar o efeito de <i>Scroll Reveal</i> e as transições de filtro sem usar bibliotecas pesadas foi complexo. A solução foi criar um <i>observer</i> nativo em JavaScript, garantindo animações de 60fps sem travar o navegador.
+        </p>
+      </td>
+      <td width="33%" align="center">
+        <h3>🎥</h3>
+        <b>Otimização de Mídia</b>
+        <p align="justify">
+          Manter a alta qualidade visual dos produtos sem prejudicar o tempo de carregamento. Convertemos vídeos para GIFs otimizados e comprimimos as imagens mantendo a nitidez, equilibrando beleza e velocidade.
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## �🚀 **Como Executar**
 
 ```bash
 # 1. Clone o repositório
