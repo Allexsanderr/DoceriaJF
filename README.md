@@ -41,38 +41,7 @@
 
  
 
-<!-- Animated Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br>
-
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Playfair+Display&weight=700&size=35&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=400&lines=Vitrine+Interativa;Design+Responsivo" alt="Vitrine" />
-</h2>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
-        <br><br>
-        <img src="https://img.shields.io/badge/✨_UX_Design-ff69b4?style=flat-square&color=ff69b4" />
-      </td>
-      <td align="center" width="50%">
-        <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="100%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
-        <br><br>
-        <img src="https://img.shields.io/badge/🛒_Carrinho_Dinâmico-ff69b4?style=flat-square&color=5d4037" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br>
-
-<!-- Animated Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br>
+<!-- Seção removida: Vitrine Interativa -->
 
 <h2 align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Playfair+Display&weight=700&size=35&duration=4000&pause=1000&color=5D4037&center=true&vCenter=true&width=500&lines=Funcionalidades+Premium" alt="Funcionalidades" />
