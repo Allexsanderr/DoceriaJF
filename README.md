@@ -23,13 +23,6 @@
   <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" width="100%" style="border-radius: 15px; box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);">
 
   <br><br>
-
-</div>
-
-<br>
-
-## Vídeos
-<div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
@@ -40,9 +33,13 @@
       </td>
     </tr>
   </table>
+  <br><br>
+
 </div>
 
 <br>
+
+ 
 
 <!-- Animated Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
