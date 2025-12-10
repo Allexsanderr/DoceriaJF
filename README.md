@@ -23,25 +23,23 @@
   <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional+photography+of+a+luxurious+confectionery+counter+filled+with+delicious+gourmet+cakes+and+pastries%2C+bright+lighting%2C+pastel+colors%2C+high+resolution%2C+4k&image_size=landscape_16_9" width="100%" style="border-radius: 15px; box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);">
 
   <br><br>
+
+</div>
+
+<br>
+
+## Vídeos
+<div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
         <img src="videos/video1.gif" alt="Vitrine animada 1" width="100%" style="border-radius: 12px; border: 4px solid #ff69b4; box-shadow: 0 0 18px rgba(255, 105, 180, 0.35);" />
       </td>
       <td align="center" width="50%">
-        <img src="screenshots/Captura de tela 2025-12-09 203742.png" alt="Vitrine e navegação" width="100%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 18px rgba(255, 20, 147, 0.30);" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="50%">
         <img src="videos/video2.gif" alt="Vitrine animada 2" width="100%" style="border-radius: 12px; border: 4px solid #5d4037; box-shadow: 0 0 18px rgba(93, 64, 55, 0.35);" />
-      </td>
-      <td align="center" width="50%">
-        <img src="screenshots/Captura de tela 2025-12-09 203849.png" alt="Carrinho e checkout" width="100%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 18px rgba(255, 105, 180, 0.30);" />
       </td>
     </tr>
   </table>
-
 </div>
 
 <br>
@@ -188,15 +186,42 @@ LocalStorage: `cadastrados`, `users`, `currentUser`.
 - Abra `admin.html` para cadastrar produtos.
 - Produtos são salvos em `localStorage` na chave `products` e aparecem na vitrine.
 
-## Screenshots
+## Imagens
 <div align="center">
-  <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 20, 147, 0.35);" />
-  <br><br>
-  <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(93, 64, 55, 0.35);" />
-  <br><br>
-  <img src="screenshots/Captura de tela 2025-12-09 203722.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
-  <br><br>
-  <img src="screenshots/Captura de tela 2025-12-09 203819.png" width="640" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+  <table>
+    <tr>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203742.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 20, 147, 0.35);" />
+      </td>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203849.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(93, 64, 55, 0.35);" />
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203722.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+      </td>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203819.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203757.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+      </td>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203810.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(93, 64, 55, 0.35);" />
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203924.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 20, 147, 0.35);" />
+      </td>
+      <td width="50%" align="center">
+        <img src="screenshots/Captura de tela 2025-12-09 203951.png" width="96%" style="border-radius: 12px; border: 4px solid #fff0f5; box-shadow: 0 0 20px rgba(255, 105, 180, 0.35);" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## Checkout via WhatsApp
